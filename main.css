@@ -913,9 +913,6 @@ a {
 .radio:nth-child(2) {
   margin-left: 25px;
 }
-.radio--checkbox .radio__visible {
-  border-radius: 0;
-}
 .radio--checkbox:before {
   background: url("img/checkmark.svg");
 }
@@ -933,6 +930,20 @@ a {
   position: relative;
   background: #fff;
   border-radius: 50%;
+}
+.radio__visible--check {
+  width: 5px;
+  height: 10px;
+  border-bottom: 3px solid #365a49;
+  border-right: 3px solid #365a49;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(31deg);
+  display: none;
+  border-bottom-right-radius: 3px;
+  border-radius: 0;
+  background: transparent;
 }
 .radio__visible:before {
   content: "";
