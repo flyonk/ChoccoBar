@@ -5,12 +5,17 @@ body {
     font-family: "Alegreya Sans Light", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 h1 {
     font-size: 48px;
     font-family: "Alegreya Sans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
+    line-height: 1.2;
 
 }
 
@@ -19,7 +24,11 @@ p {
     font-family: "Alegreya Sans";
     color: rgb(255, 255, 255);
     text-align: left;
+    line-height: 1.2;
 }
+
+
+
 
 
 .inner-footer__p {
@@ -35,7 +44,7 @@ p {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: -15px;
+    
 
 }
 
@@ -45,7 +54,9 @@ p {
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
-    margin-bottom: -1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
 }
 
 .reason__h3 {
@@ -55,7 +66,8 @@ p {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: -9px;
+    margin-top: 40px;
+    
 
 }
 
@@ -65,9 +77,28 @@ p {
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
+    margin-top: 20px;
 
 }
 
+.reviews__title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-family: "Alegreya Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 55px;
 
+}
 
+.reviews-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Alegreya Sans";
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
 

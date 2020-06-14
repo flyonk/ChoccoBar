@@ -1,3 +1,26 @@
+@mixin button666 {
+    border-radius: 35px 35px;
+    width: 156px;
+    height: 58px;
+    border: none;
+    font-size: 19px;
+    font-family: "Alegreya Sans ExtraBold";
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 28px;
+
+    &:focus {
+        outline: 0;
+    }
+
+}
+
+
+
+
+
+
+
 .wrapper {
     width: 100%;
     height: 100%;
@@ -10,7 +33,6 @@
     width: 1100px;
     margin: 0 auto;
     justify-content: center;
-
 }
 
 .inner-layout {
@@ -18,4 +40,6 @@
     margin-left: 80px;
     margin-right: 80px;
     flex-direction: column;
+
+    
 }

@@ -5,11 +5,11 @@
 .header__inner {
     display: flex;
     justify-content: space-between;
-    height: 68px;
+    height: 73px;
     width: 100%;
     align-items: center;
     padding: 0;
-
+    
 }
 
 .header__nav {
@@ -29,19 +29,13 @@
     list-style: none
 }
 
-li a {
-    color: rgb(255, 255, 255);
-    margin-right: 29px;;
-
-}
 
 .header__phone {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 160px;
+    width: 180px;
     height: 68px;
-    margin-right: 79px;
 }
 
 .phonetext {
@@ -60,3 +54,23 @@ a {
     fill: white;
 }
 
+.headev__nav-item {
+    margin-right: 30px;
+    font-size: 18px;
+    font-family: "Alegreya Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.О_нас_________Батончики_________Команда________ {
+
+    text-align: right;
+    position: absolute;
+    left: 175.969px;
+    top: 59.322px;
+    z-index: 410;
+}

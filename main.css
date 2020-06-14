@@ -343,12 +343,17 @@ body {
   font-family: "Alegreya Sans Light", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 h1 {
   font-size: 48px;
   font-family: "Alegreya Sans";
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 p {
@@ -356,6 +361,7 @@ p {
   font-family: "Alegreya Sans";
   color: white;
   text-align: left;
+  line-height: 1.2;
 }
 
 .inner-footer__p {
@@ -371,7 +377,6 @@ p {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: -15px;
 }
 
 .blackp {
@@ -380,7 +385,8 @@ p {
   color: #666666;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: -1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .reason__h3 {
@@ -390,7 +396,7 @@ p {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: -9px;
+  margin-top: 40px;
 }
 
 .reason__p {
@@ -399,6 +405,27 @@ p {
   color: #666666;
   line-height: 1.2;
   text-align: center;
+  margin-top: 20px;
+}
+
+.reviews__title {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "Alegreya Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 55px;
+}
+
+.reviews-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Alegreya Sans";
+  line-height: 1.2;
+  margin-bottom: 22px;
 }
 
 .wrapper {
@@ -428,7 +455,7 @@ p {
 .header__inner {
   display: flex;
   justify-content: space-between;
-  height: 68px;
+  height: 73px;
   width: 100%;
   align-items: center;
   padding: 0;
@@ -451,18 +478,12 @@ p {
   list-style: none;
 }
 
-li a {
-  color: white;
-  margin-right: 29px;
-}
-
 .header__phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 160px;
+  width: 180px;
   height: 68px;
-  margin-right: 79px;
 }
 
 .phonetext {
@@ -480,24 +501,57 @@ a {
   fill: white;
 }
 
+.headev__nav-item {
+  margin-right: 30px;
+  font-size: 18px;
+  font-family: "Alegreya Sans";
+  color: white;
+  line-height: 1.667;
+}
+.headev__nav-item:last-child {
+  margin-right: 0;
+}
+
+.О_нас_________Батончики_________Команда________ {
+  text-align: right;
+  position: absolute;
+  left: 175.969px;
+  top: 59.322px;
+  z-index: 410;
+}
+
 .upper-block {
   display: flex;
-  background-image: url("img/фон.png");
-  width: 1100px;
+  background: url("img/choccolates.png") left 94% center no-repeat, url("img/фон.png") center right no-repeat;
+  background-color: #61C4D9;
+  width: 100%;
   height: 650px;
+  position: relative;
+}
+.upper-block:before {
+  content: url("img/leaf1.png");
+  position: absolute;
+  bottom: -50px;
+  left: 2%;
+}
+.upper-block:after {
+  content: url("img/hero.png");
+  position: absolute;
+  bottom: -50px;
+  right: 2%;
 }
 
 .upper-block__main {
   display: flex;
   width: 988px;
-  height: 342px;
-  margin-top: 48px;
+  height: 322px;
+  margin-top: 83px;
 }
 
 .upper-block__inner-main {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 370px;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
@@ -506,35 +560,22 @@ a {
 .inner-main__column:first-child {
   display: flex;
   align-items: flex-start;
-  height: 190px;
-  width: 360px;
+  height: 100%;
+  width: 370px;
 }
 
 .inner-main__column:nth-child(2) {
   width: 100%;
-  height: 65px;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 1px;
 }
 
 .inner-main__column:last-child {
   width: 100%;
   height: 100%;
-}
-
-.offer {
-  border-radius: 35px 35px;
-  width: 156px;
-  height: 58px;
-  background-color: white;
-  border: none;
-  font-size: 19px;
-  font-family: "Alegreya Sans ExtraBold";
-  color: #365a49;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 28px;
-}
-.offer:focus {
-  outline: 0;
+  padding-bottom: 5px;
+  padding-left: 3px;
 }
 
 .upper-block__inner-scroller {
@@ -578,11 +619,49 @@ a {
   margin-top: 50px;
 }
 
+.hidden666 {
+  visibility: hidden;
+}
+
+.offer {
+  border-radius: 35px 35px;
+  width: 156px;
+  height: 58px;
+  border: none;
+  font-size: 19px;
+  font-family: "Alegreya Sans ExtraBold";
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 28px;
+  background-color: white;
+  color: #365a49;
+}
+.offer:focus {
+  outline: 0;
+}
+.offer:hover {
+  background-color: #365a49;
+  color: white;
+}
+
 .why-chocko-block {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 650px;
+  position: relative;
+}
+.why-chocko-block:before {
+  position: absolute;
+  content: url("img/halfleaf.png");
+  left: 0;
+  bottom: 140px;
+}
+.why-chocko-block:after {
+  position: absolute;
+  content: url("img/малина.png");
+  left: 0;
+  bottom: -110px;
 }
 
 .why-chocko-block__inner:first-child {
@@ -591,13 +670,13 @@ a {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 209px;
+  height: 210px;
 }
 
 .why-chocko-block__inner:last-child {
   display: flex;
   width: 100%;
-  height: 284px;
+  height: 340px;
   justify-content: center;
 }
 
@@ -610,7 +689,329 @@ a {
   align-items: center;
 }
 
-.reasonsvg {
-  margin-top: 40px;
-  margin-bottom: 15px;
+.why-chocko-block__reason:nth-child(2) {
+  width: 50%;
 }
+
+.circle-bg {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f2f5f4;
+  margin-top: 30px;
+}
+
+.reviews_block {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+.reviews_block:before {
+  position: absolute;
+  content: url("img/strawberry.png");
+  right: 15px;
+  top: 33px;
+}
+
+.reviews__display {
+  background: #f2f5f4;
+  padding: 50px 45px 34px;
+  margin-top: 28px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display:before {
+  content: "";
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+
+.reviews__display-inner {
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
+}
+
+.reviews__textstyle {
+  font-size: 18px;
+  font-family: "Alegreya Sans";
+  color: #666666;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-family: "Alegreya Sans Medium";
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.interactive-avatar__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.reviews__content {
+  flex: 1;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.interactive-avatar {
+  width: 70px;
+  height: 70px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar:active {
+  border-color: #365a49;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+.interactive-avatar__block {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.order-section {
+  width: 100%;
+  height: 650px;
+  background-image: url("img/background2.png");
+  position: relative;
+}
+.order-section:before {
+  position: absolute;
+  content: url("img/blackberry.png");
+  left: 2%;
+  bottom: 80px;
+}
+.order-section:after {
+  position: absolute;
+  content: url("img/ejevika.png");
+  right: 10px;
+  top: -150px;
+}
+
+.orderh1 {
+  color: #365a49;
+}
+
+.orderh1div {
+  margin-top: 75px;
+  align-self: center;
+}
+
+.orderform {
+  display: flex;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 45px;
+  width: 50%;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 18px;
+}
+.form__row:last-child {
+  flex-wrap: wrap;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 45px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+}
+.form__input:focus {
+  border-color: #dee2bd;
+  outline: none;
+}
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+  width: 450px;
+  outline: none;
+  border: none;
+}
+
+.form__controls {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.form__title {
+  font-size: 18px;
+  font-family: "Alegreya Sans";
+  color: #365a49;
+  line-height: 1.667;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.radio:nth-child(2) {
+  margin-left: 25px;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox:before {
+  background: url("img/checkmark.svg");
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+}
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.radio__visible2 {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background: #fff;
+  border-radius: 0;
+}
+.radio__visible2:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.form__btns {
+  margin-left: 20px;
+}
+
+.offer2 {
+  border-radius: 35px 35px;
+  width: 156px;
+  height: 58px;
+  border: none;
+  font-size: 19px;
+  font-family: "Alegreya Sans ExtraBold";
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 28px;
+  background-color: #365a49;
+  color: white;
+}
+.offer2:focus {
+  outline: 0;
+}
+.offer2:hover {
+  background-color: white;
+  color: #365a49;
+}
+
+.offer3 {
+  border-radius: 35px 35px;
+  width: 156px;
+  height: 58px;
+  border: none;
+  font-size: 19px;
+  font-family: "Alegreya Sans ExtraBold";
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 28px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  text-transform: capitalize;
+}
+.offer3:focus {
+  outline: 0;
+}
+.offer3:hover {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

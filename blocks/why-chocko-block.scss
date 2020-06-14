@@ -3,7 +3,21 @@
     flex-direction: column;
     width: 100%;
     height: 650px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: url('img/halfleaf.png');
+        left: 0;
+        bottom: 140px;
+    }
     
+    &:after {
+        position: absolute;
+        content: url('img/малина.png');
+        left: 0;
+        bottom: -110px;
+    }
 }
 
 .why-chocko-block__inner:first-child {
@@ -12,7 +26,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 209px;
+    height: 210px;
     
   
 }
@@ -20,8 +34,9 @@
 .why-chocko-block__inner:last-child {
     display: flex;
     width: 100%;
-    height: 284px;
+    height: 340px;
     justify-content: center;
+    
 }
 
 .why-chocko-block__reason {
@@ -31,10 +46,24 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+
+}
+
+.why-chocko-block__reason:nth-child(2) {
+    width: 50%;
 }
 
 .reasonsvg {
-    margin-top: 40px;
-    margin-bottom: 15px;
+
 }
 
+.circle-bg {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    margin-top: 30px;
+}

@@ -8,22 +8,21 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="layout-container">
-                <div class="upper-block">
-                    <img src="img/Батончики1.png" alt="" class="batonchikipng">
+                <section class="upper-block">
+                <div class="layout-container">
                     <div class="inner-layout">
                     <header class="header">
                      <div class="header__inner">
                          <a href=""><img src="img/logo.png" alt="logo" class="header__logo"></a>
                          <nav class="">
                             <ul class="header__nav">
-                                <li><a href="" class="">О нас</a></li>
-                                <li class=""><a href="">Батончики</a></li>
-                                <li class=""><a href="">Команда</a></li>
-                                <li class=""><a href="">Меню</a></li>
-                                <li><a href="">Отзывы</a></li>
-                                <li><a href="">Как мы работаем</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">О нас</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Батончики</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Команда</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Меню</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Отзывы</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Как мы работаем</a></li>
+                                <li class="headev__nav-item"><a href="" class="headev__nav-item">Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="header__phone"><a href="tel:+78009039090"><img src="img/phone.png" alt="phone" class="phonesvg" width="12" height="11"></a>
@@ -39,7 +38,7 @@
                                     <form action=""><input type="submit" name="offer" value="ЗАКАЗАТЬ" class="offer"></form>
                                 </div>
                             </div>
-                            <div class="upper-block__inner-scroller">
+                            <div class="upper-block__inner-scroller hidden666">
                                 <div class="svgcircle"><svg><circle r="3" fill="white" cx="15" cy="10"/></svg></div>
                                 <div class="svgcircle"><svg><circle r="3" fill="white" cx="15" cy="10" /></svg></div>
                                 <div class="svgcircle"><svg><circle r="3" fill="white" cx="15" cy="10" /></svg></div>
@@ -58,32 +57,165 @@
                         </div>
                     </div>
                 </div>
-                <div class="why-chocko-block">
+                </section>
+                <section class="why-chocko-block">
+                <div class="layout-container">
                     <div class="inner-layout">
                     <div class="why-chocko-block__inner">
                         <h1 class="whychocko">ПОЧЕМУ CHOCCO?</h1>
                         <p class="blackp">В нашем мире все происходит очень быстро, поэтому мы<br> делаем батончики, которые удобно взять с собой.</p>
                         </div>
-                    </div>
+                    
                     <div class="why-chocko-block__inner">
                         <div class="why-chocko-block__reason">
-                            <img src="img/1.svg" alt="" width="66" height="69" class="reasonsvg">
+                            <div class="circle-bg"><img src="img/1.svg" alt="" width="66" height="69" class="reasonsvg"></div>
                             <h3 class="reason__h3">Полезно</h3>
                             <p class="reason__p">Натуральность - ключевое качество<br> нашей продукции. Мы используем<br> только природные ингридиенты.</p>
                         </div>
                         <div class="why-chocko-block__reason">
-                            <img src="img/3.svg" alt="" width="66" height="69" class="reasonsvg">
+                            <div class="circle-bg"><img src="img/3.svg" alt="" width="66" height="69" class="reasonsvg"></div>
                             <h3 class="reason__h3">Вкусно</h3>
                             <p class="reason__p">Нежный, ненавязчивый, изысканный – <br>так клиенты описывают вкусовые<br> качества наших батончиков.</p>
                         </div>
                         <div class="why-chocko-block__reason">
-                            <img src="img/2.svg" alt="" width="66" height="69" class="reasonsvg">
+                            <div class="circle-bg"><img src="img/2.svg" alt="" width="66" height="69" class="reasonsvg"></div>
                             <h3 class="reason__h3">Питательно</h3>
                             <p class="reason__p">Высокое содержание качественного<br> белка, а также всех необходимых<br> витаминов и минералов</p>
                         </div>
                     </div>
+                    </div>
                 </div>
+                </section>
+                <section class="reviews_block">
+                <div class="layout-container">
+                    <div class="inner-layout">
+                        <h2 class="reviews__title">Отзывы</h2>
+                        <div class="reviews">
+                            <div class="reviews__display">
+                                <div class="reviews__display-inner">
+                                    <div class="reviews__avatar">
+                                        <img src="img/photo1.jpg" alt="" class="reviews__avatar-img">
+                                    </div>
+                                    <article class="reviews__content">
+                                        <h3 class="reviews-title">Лучший перекус</h3>
+                                        <div class="reviews__text">
+                                            <p class="reviews__textstyle">Я ем малыми порциями, но часто. Это повышает мою<br> продуктивность в разы. 
+                                                В течение дня сижу за компьютером<br> и часто отходить в кафе или на кухню
+                                                просто не могу себе<br> позволить. А батончик - он всегда под рукой. Это приятно<br> и удобно.
+                                            </p>
+                                        </div>
+                                        <div class="reviews__author">
+                                            Алёна Хмельницкая
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                                 <ul class="reviews__switcher">
+                                    <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+                                        <a href="#" class="interactive-avatar__link">
+                                            <img src="img/photo1.jpg" alt="black-hair-wooman" class="interactive-avatar__img" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="reviews__switcher-item interactive-avatar">
+                                        <a href="#" class="interactive-avatar__link">
+                                            <img src="img/photo2.png" alt="" class="interactive-avatar__img" width="70" height="70">
+                                        </a>
+                                    </li>
+                                    <li class="reviews__switcher-item interactive-avatar">
+                                        <a href="#" class="interactive-avatar__link">
+                                            <img src="img/photo3.png" alt="" class="interactive-avatar__img" width="70" height="70">
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                        <section class="order-section">
+                        <div class="layout-container">
+                            <div class="inner-layout">
+                                <div class="orderh1div"><h1 class="orderh1">Закажите доставку</h1></div>
+                                <form action="" class="orderform">
+                                    <div class="form__col">
+                                        <div class="form__row">
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Имя</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Телефон</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                        <div class="form__row">
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Улица</div>
+                                                <input type="text" class="form__input">
+                                            </label>  
+                                        </div>
+                                        <div class="form__row">
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Дом</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Корпус</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Квартира</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Этаж</div>
+                                                <input type="text" class="form__input">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form__col">
+                                        <div class="form__row">
+                                            <label for="" class="form__block">
+                                                <div class="form__title">Комментарий</div>
+                                                <textarea class="form__input--textarea"></textarea>
+                                            </label>
+                                            <div class="form__controls">   
+                                                <label class="radio">
+                                                    <input type="radio" name="option" class="radio__elem">
+                                                    <div class="radio__visible"></div>
+                                                    <div class="radio__title">Потребуется сдача</div>
+                                                </label>
+                                                <label class="radio">
+                                                    <input type="radio" name="option" class="radio__elem">
+                                                    <div class="radio__visible"></div>
+                                                    <div class="radio__title">Оплата по карте</div>
+                                                </label>
+                                            </div>
+                                            <div class="form__controls">
+                                                <label class="radio radio--checkbox">
+                                                    <input type="checkbox" class="radio__elem">
+                                                    <div class="radio__visible"></div>
+                                                    <div class="radio__title">Оплата по карте</div>
+                                                </label>
+                                            </div>
+                                            <div class="form__btns">
+                                                <input type="submit" name="offer" value="ЗАКАЗАТЬ" class="offer2">
+                                                <input type="reset" name="offer" value="Очистить" class="offer3">
+
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+                            </div>
+                        </div>
+                        </section>
+
+                
         </div>
-    </div>    
+       
 </body>
 </html>

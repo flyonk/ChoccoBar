@@ -1,0 +1,106 @@
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+
+    &:nth-child(2) {
+        margin-left: 25px;
+    }
+
+    &--checkbox {
+        .radio__visible {
+            border-radius: 0;
+        }
+    &:before {
+        background: url('img/checkmark.svg');
+    }
+    }
+}
+
+
+
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &::before {
+            display: block;
+        }
+    }
+}
+
+.radio__visible {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+
+
+    &:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #365a49;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        
+    }
+}
+
+.radio__visible2 {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    background: #fff;
+    border-radius: 0;
+
+
+    &:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #365a49;
+        border-radius: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+    }
+}
+
+.form__btns {
+    margin-left: 20px;
+}
+
+.offer2 {
+    @include button666;
+    background-color: #365a49;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: #365a49;
+    }
+}
+
+.offer3 {
+    @include button666;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
