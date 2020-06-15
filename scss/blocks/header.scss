@@ -1,5 +1,5 @@
 .header {
-    margin-top: 5px;
+    color: #ffffff;
 }
 
 .header__inner {
@@ -18,10 +18,11 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 1.667;
-    color: rgb(255, 255, 255);
     list-style: none;
     width: 670px;
     height: 100%;
+    margin-left: 40px;
+    margin-right: 10px;
 }
 
 .header__nav a {
@@ -34,43 +35,35 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 180px;
-    height: 68px;
+    color: inherit;
+
 }
 
-.phonetext {
+
+.header__phone-icon {
+    height: 12px;
+    width: 12px;
+    margin-right: 6px;
+}
+
+.header__phone-image {
+    min-width: 100%;
+    display: block;
+}
+
+.header__phone-text {
     font-size: 24px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    line-height: 1.25;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-.phonesvg {
-    fill: white;
+    color: inherit;
 }
 
 .headev__nav-item {
-    margin-right: 30px;
+    margin-right: 29px;
     font-size: 18px;
     font-family: "Alegreya Sans";
-    color: rgb(255, 255, 255);
     line-height: 1.667;
+    color: inherit;
 
     &:last-child {
         margin-right: 0;
     }
-}
-
-.О_нас_________Батончики_________Команда________ {
-
-    text-align: right;
-    position: absolute;
-    left: 175.969px;
-    top: 59.322px;
-    z-index: 410;
 }

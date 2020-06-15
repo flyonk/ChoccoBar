@@ -1,0 +1,122 @@
+.whychocco {
+
+
+    &:before {
+        position: absolute;
+        content: url('../img/halfleaf.png');
+        left: 0;
+        bottom: 140px;
+    }
+    
+    &:after {
+        position: absolute;
+        content: url('../img/малина.png');
+        left: 0;
+        bottom: -110px;
+    }
+}
+
+.whychocco__container {
+    justify-content: flex-start;
+    padding-top: 95px;
+}
+
+
+.whychocco__title {
+    font-size: 48px;
+    font-family: "Alegreya Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+
+}
+
+.whychocco__description {
+    font-size: 18px;
+    font-family: "Alegreya Sans";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+
+
+.whychocco__reason {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whychocco__reason-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+        position: absolute;
+        content: url('../img/bubbles.png');
+        top: 32%;
+        right: 65%;
+        }
+
+    &:nth-child(2) {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    &:last-child {
+        &:before {
+            position: absolute;
+            content: url('../img/bubbles.png');
+            top: 32%;
+            left: 64%;
+        }
+    }
+
+
+}
+
+.reason-item__img {
+    width: 66px;
+    height: 66px;
+}
+
+.reason-item__text {
+    font-size: 18px;
+    font-family: "Alegreya Sans Light";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reason-item__title {
+    font-size: 27px;
+    font-family: "Alegreya Sans";
+    color: black;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.reason-item__img-cover {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+
+

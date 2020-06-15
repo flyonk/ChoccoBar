@@ -7,20 +7,11 @@
         margin-left: 25px;
     }
 
-    &--checkbox {
-        &:before {
-        .radio__visible {
-            border-radius: 0;
-
-                
-            }
-        }
-    }
     &:before {
-        background: url('img/checkmark.svg');
-    }
+        background: url('../img/checkmark.svg');
     }
 }
+
 
 
 
@@ -28,7 +19,7 @@
 .radio__elem {
     display: none;
 
-    &:checked ~ .radio__visible {
+    &:checked~.radio__visible {
         &::before {
             display: block;
         }
@@ -42,22 +33,6 @@
     background: #fff;
     border-radius: 50%;
 
-    &--check {
-        &:before {
-            width: 5px;
-            height: 10px;
-            border-bottom: 3px solid #365a49;
-            border-right: 3px solid #365a49;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(31deg);
-            display: none;
-            border-bottom-right-radius: 3px;
-            border-radius: 0;
-            background: transparent;
-        }
-    }
     &:before {
         content: "";
         width: 14px;
@@ -69,8 +44,27 @@
         left: 50%;
         transform: translate(-50%, -50%);
         display: none;
-        
+
     }
+
+        &--check {
+            border-radius: 0;
+            &:before {
+                width: 5px;
+                height: 10px;
+                border-bottom: 3px solid #365a49;
+                border-right: 3px solid #365a49;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(31deg);
+                display: none;
+                border-bottom-right-radius: 3px;
+                border-radius: 0;
+                background: transparent;
+            }
+
+        }
 }
 
 .radio__visible2 {
@@ -100,7 +94,7 @@
     margin-left: 20px;
 }
 
-.offer2 {
+.form__btns-submit {
     @include button666;
     background-color: #365a49;
     color: white;
@@ -111,13 +105,13 @@
     }
 }
 
-.offer3 {
+.form__btns-clear {
     @include button666;
     background-color: transparent;
     color: black;
     outline: none;
     text-transform: capitalize;
-    
+
 
     &:hover {
         color: white;

@@ -369,45 +369,6 @@ p {
   margin-left: 10px;
 }
 
-.whychocko {
-  font-size: 48px;
-  font-family: "Alegreya Sans";
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.blackp {
-  font-size: 18px;
-  font-family: "Alegreya Sans";
-  color: #666666;
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.reason__h3 {
-  font-size: 27px;
-  font-family: "Alegreya Sans";
-  color: black;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.reason__p {
-  font-size: 18px;
-  font-family: "Alegreya Sans Light";
-  color: #666666;
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .reviews__title {
   display: flex;
   justify-content: center;
@@ -428,6 +389,27 @@ p {
   margin-bottom: 22px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -436,20 +418,18 @@ p {
 .layout-container {
   display: flex;
   flex-direction: column;
-  width: 1100px;
-  margin: 0 auto;
   justify-content: center;
-}
-
-.inner-layout {
-  display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
-  flex-direction: column;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  min-height: 650px;
+  align-items: center;
+  position: relative;
 }
 
 .header {
-  margin-top: 5px;
+  color: #ffffff;
 }
 
 .header__inner {
@@ -467,10 +447,11 @@ p {
   text-decoration: none;
   font-size: 18px;
   line-height: 1.667;
-  color: white;
   list-style: none;
   width: 670px;
   height: 100%;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
 .header__nav a {
@@ -482,70 +463,60 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 180px;
-  height: 68px;
+  color: inherit;
 }
 
-.phonetext {
+.header__phone-icon {
+  height: 12px;
+  width: 12px;
+  margin-right: 6px;
+}
+
+.header__phone-image {
+  min-width: 100%;
+  display: block;
+}
+
+.header__phone-text {
   font-size: 24px;
-  color: white;
-  text-transform: uppercase;
-  line-height: 1.25;
-}
-
-a {
-  text-decoration: none;
-}
-
-.phonesvg {
-  fill: white;
+  color: inherit;
 }
 
 .headev__nav-item {
-  margin-right: 30px;
+  margin-right: 29px;
   font-size: 18px;
   font-family: "Alegreya Sans";
-  color: white;
   line-height: 1.667;
+  color: inherit;
 }
 .headev__nav-item:last-child {
   margin-right: 0;
 }
 
-.О_нас_________Батончики_________Команда________ {
-  text-align: right;
-  position: absolute;
-  left: 175.969px;
-  top: 59.322px;
-  z-index: 410;
-}
-
 .upper-block {
-  display: flex;
-  background: url("img/choccolates.png") left 94% center no-repeat, url("img/фон.png") center right no-repeat;
+  background: url("../img/choccolates.png") left 94% center no-repeat, url("../img/фон.png") center right no-repeat;
   background-color: #61C4D9;
-  width: 100%;
-  height: 650px;
-  position: relative;
 }
 .upper-block:before {
-  content: url("img/leaf1.png");
+  content: url("../img/leaf1.png");
   position: absolute;
   bottom: -50px;
   left: 2%;
 }
 .upper-block:after {
-  content: url("img/hero.png");
+  content: url("../img/hero.png");
   position: absolute;
   bottom: -50px;
   right: 2%;
 }
 
+.upper-block__container {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .upper-block__main {
   display: flex;
-  width: 988px;
-  height: 322px;
-  margin-top: 83px;
 }
 
 .upper-block__inner-main {
@@ -583,7 +554,7 @@ a {
   flex-direction: column;
   width: 30px;
   height: 200px;
-  margin-left: 590px;
+  margin-left: 500px;
   margin-top: 80px;
   position: relative;
 }
@@ -598,7 +569,7 @@ a {
   display: flex;
   width: 489px;
   height: 80px;
-  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .upper-block__inner-footer {
@@ -623,77 +594,129 @@ a {
   visibility: hidden;
 }
 
-.offer {
-  border-radius: 35px 35px;
-  width: 156px;
-  height: 58px;
+.inner-main__column-offer {
+  border-radius: 35px;
   border: none;
   font-size: 19px;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 28px;
+  line-height: normal;
+  padding: 21px 32px;
+  display: inline-block;
   background-color: white;
   color: #365a49;
 }
-.offer:focus {
+.inner-main__column-offer:focus {
   outline: 0;
 }
-.offer:hover {
+.inner-main__column-offer:hover {
   background-color: #365a49;
   color: white;
 }
 
-.why-chocko-block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 650px;
-  position: relative;
+.button-column {
+  margin-top: 30px;
 }
-.why-chocko-block:before {
+
+.logo {
+  width: 53px;
+  height: 39px;
+}
+
+.logo__image {
+  min-width: 100%;
+}
+
+.whychocco:before {
   position: absolute;
-  content: url("img/halfleaf.png");
+  content: url("../img/halfleaf.png");
   left: 0;
   bottom: 140px;
 }
-.why-chocko-block:after {
+.whychocco:after {
   position: absolute;
-  content: url("img/малина.png");
+  content: url("../img/малина.png");
   left: 0;
   bottom: -110px;
 }
 
-.why-chocko-block__inner:first-child {
+.whychocco__container {
+  justify-content: flex-start;
+  padding-top: 95px;
+}
+
+.whychocco__title {
+  font-size: 48px;
+  font-family: "Alegreya Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.whychocco__description {
+  font-size: 18px;
+  font-family: "Alegreya Sans";
+  color: #666666;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.whychocco__reason {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whychocco__reason-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  height: 210px;
-}
-
-.why-chocko-block__inner:last-child {
-  display: flex;
-  width: 100%;
-  height: 340px;
-  justify-content: center;
-}
-
-.why-chocko-block__reason {
-  display: flex;
-  flex-direction: column;
-  width: 310px;
-  height: 100%;
-  justify-content: center;
   align-items: center;
 }
-
-.why-chocko-block__reason:nth-child(2) {
-  width: 50%;
+.whychocco__reason-item:before {
+  position: absolute;
+  content: url("../img/bubbles.png");
+  top: 32%;
+  right: 65%;
+}
+.whychocco__reason-item:nth-child(2) {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.whychocco__reason-item:last-child:before {
+  position: absolute;
+  content: url("../img/bubbles.png");
+  top: 32%;
+  left: 64%;
 }
 
-.circle-bg {
+.reason-item__img {
+  width: 66px;
+  height: 66px;
+}
+
+.reason-item__text {
+  font-size: 18px;
+  font-family: "Alegreya Sans Light";
+  color: #666666;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reason-item__title {
+  font-size: 27px;
+  font-family: "Alegreya Sans";
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.reason-item__img-cover {
   display: flex;
   height: 120px;
   width: 120px;
@@ -701,17 +724,13 @@ a {
   justify-content: center;
   border-radius: 50%;
   background-color: #f2f5f4;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
-.reviews_block {
-  width: 100%;
-  height: 650px;
-  position: relative;
-}
 .reviews_block:before {
   position: absolute;
-  content: url("img/strawberry.png");
+  content: url("../img/strawberry.png");
   right: 15px;
   top: 33px;
 }
@@ -813,35 +832,39 @@ a {
   padding-top: 15px;
 }
 
-.order-section {
-  width: 100%;
-  height: 650px;
-  background-image: url("img/background2.png");
+.reviews__switcher-item {
   position: relative;
+}
+.reviews__switcher-item:before {
+  content: url("../img/bubbles.png");
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.order-section {
+  background-image: url("../img/background2.png");
 }
 .order-section:before {
   position: absolute;
-  content: url("img/blackberry.png");
+  content: url("../img/blackberry.png");
   left: 2%;
   bottom: 80px;
 }
 .order-section:after {
   position: absolute;
-  content: url("img/ejevika.png");
+  content: url("../img/ejevika.png");
   right: 10px;
   top: -150px;
 }
 
-.orderh1 {
+.order-section__title {
+  margin-top: 75px;
+  align-self: center;
   color: #365a49;
 }
 
-.orderh1div {
-  margin-top: 75px;
-  align-self: center;
-}
-
-.orderform {
+.order-section__orderform {
   display: flex;
   margin-top: 40px;
   margin-right: 20px;
@@ -904,6 +927,18 @@ a {
   line-height: 1.667;
 }
 
+.radio__title {
+  font-size: 18px;
+  font-family: "Alegreya Sans";
+  color: #365a49;
+  line-height: 1.667;
+  margin-left: 10px;
+}
+
+.form__btns {
+  margin-top: 20px;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -913,8 +948,8 @@ a {
 .radio:nth-child(2) {
   margin-left: 25px;
 }
-.radio--checkbox:before {
-  background: url("img/checkmark.svg");
+.radio:before {
+  background: url("../img/checkmark.svg");
 }
 
 .radio__elem {
@@ -931,7 +966,22 @@ a {
   background: #fff;
   border-radius: 50%;
 }
+.radio__visible:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #365a49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
 .radio__visible--check {
+  border-radius: 0;
+}
+.radio__visible--check:before {
   width: 5px;
   height: 10px;
   border-bottom: 3px solid #365a49;
@@ -944,18 +994,6 @@ a {
   border-bottom-right-radius: 3px;
   border-radius: 0;
   background: transparent;
-}
-.radio__visible:before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #365a49;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
 }
 
 .radio__visible2 {
@@ -982,46 +1020,44 @@ a {
   margin-left: 20px;
 }
 
-.offer2 {
-  border-radius: 35px 35px;
-  width: 156px;
-  height: 58px;
+.form__btns-submit {
+  border-radius: 35px;
   border: none;
   font-size: 19px;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 28px;
+  line-height: normal;
+  padding: 21px 32px;
+  display: inline-block;
   background-color: #365a49;
   color: white;
 }
-.offer2:focus {
+.form__btns-submit:focus {
   outline: 0;
 }
-.offer2:hover {
+.form__btns-submit:hover {
   background-color: white;
   color: #365a49;
 }
 
-.offer3 {
-  border-radius: 35px 35px;
-  width: 156px;
-  height: 58px;
+.form__btns-clear {
+  border-radius: 35px;
   border: none;
   font-size: 19px;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 28px;
+  line-height: normal;
+  padding: 21px 32px;
+  display: inline-block;
   background-color: transparent;
   color: black;
   outline: none;
   text-transform: capitalize;
 }
-.offer3:focus {
+.form__btns-clear:focus {
   outline: 0;
 }
-.offer3:hover {
+.form__btns-clear:hover {
   color: white;
   text-decoration: none;
 }

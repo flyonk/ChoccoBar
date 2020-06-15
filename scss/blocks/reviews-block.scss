@@ -1,11 +1,9 @@
 .reviews_block {
-    width: 100%;
-    height: 650px;
-    position: relative;
+
 
     &:before {
         position: absolute;
-        content: url('img/strawberry.png');
+        content: url('../img/strawberry.png');
         right: 15px;
         top: 33px;  
     }
@@ -113,3 +111,13 @@
     padding-top: 15px;
 }
 
+.reviews__switcher-item {
+    position: relative;
+
+    &:before {
+        content: url('../img/bubbles.png');
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+}

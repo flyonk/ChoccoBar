@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>batoncheg.ru</title>
 </head>
 <body>
     <div class="wrapper">
-                <section class="upper-block">
-                <div class="layout-container">
-                    <div class="inner-layout">
+                <section class="section upper-block">
+                <div class="layout-container upper-block__container">
                     <header class="header">
                      <div class="header__inner">
-                         <a href=""><img src="img/logo.png" alt="logo" class="header__logo"></a>
+                         <div class="logo"><img src="img/logo.png" alt="logo" class="logo__image"></div>
                          <nav class="">
                             <ul class="header__nav">
                                 <li class="headev__nav-item"><a href="" class="headev__nav-item">О нас</a></li>
@@ -25,17 +24,21 @@
                                 <li class="headev__nav-item"><a href="" class="headev__nav-item">Контакты</a></li>
                             </ul>
                         </nav>
-                        <div class="header__phone"><a href="tel:+78009039090"><img src="img/phone.png" alt="phone" class="phonesvg" width="12" height="11"></a>
-                    <a href="tel:+78009039090"> <p class="phonetext">8 800 903 90 90</p></a>
+                        <a href="tel:+78009039090" class="header__phone">
+                            <span class="header__phone-icon">
+                                <img src="img/phone.png" alt="phone" class="header__phone-image">
+                            </span>
+                            <span class="header__phone-text">8 800 903 90 90</span>
+                        </a>
                         </div>
-                    </div>
+                    
                     </header>
                         <div class="upper-block__main">
                             <div class="upper-block__inner-main">
                                 <div class="inner-main__column"><h1>натуральные шоколадные батончики</h1></div>
                                 <article class="inner-main__column"><p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p></article>
-                                <div class="inner-main__column">
-                                    <form action=""><input type="submit" name="offer" value="ЗАКАЗАТЬ" class="offer"></form>
+                                <div class="inner-main__column button-column">
+                                    <a href="" class="inner-main__column-offer">заказать</a>
                                 </div>
                             </div>
                             <div class="upper-block__inner-scroller hidden666">
@@ -56,39 +59,38 @@
                             <div class="upper-block__inner-footer"><img src="img/ruler.svg" alt="ruler" width="44" height="41" class="inner-footer__svg3"><p class="inner-footer__p">Не портит<br> фигуру</p></div>
                         </div>
                     </div>
+                </section>
+                <section class="section whychocco">
+                <div class="layout-container whychocco__container">
+                        <h1 class="whychocco__title">ПОЧЕМУ CHOCCO?</h1>
+                        <div class="whychocco__description">В нашем мире все происходит очень быстро, поэтому мы<br> делаем батончики, которые удобно взять с собой.</div>
+
+
+                        <nav class="whychocco__navigation">
+                            <ul class="whychocco__reason">
+                                <li class="whychocco__reason-item">
+                                    <div class="reason-item__img-cover"><img src="img/1.svg" alt="" class="reason-item__img"></div>
+                                    <h3 class="reason-item__title">Полезно</h3>
+                                    <p class="reason-item__text">Натуральность - ключевое качество<br> нашей продукции. Мы используем<br> только природные ингридиенты.</p>
+                                </li>
+                                <li class="whychocco__reason-item">
+                                    <div class="reason-item__img-cover"><img src="img/3.svg" alt="" class="reason-item__img"></div>
+                                    <h3 class="reason-item__title">Вкусно</h3>
+                                    <p class="reason-item__text">Нежный, ненавязчивый, изысканный – <br>так клиенты описывают вкусовые<br> качества наших батончиков.</p>
+                                </li>
+                                <li class="whychocco__reason-item">
+                                    <div class="reason-item__img-cover"><img src="img/2.svg" alt="" class="reason-item__img"></div>
+                                    <h3 class="reason-item__title">Питательно</h3>
+                                    <p class="reason-item__text">Высокое содержание качественного<br> белка, а также всех необходимых<br> витаминов и минералов</p>
+                                </li>
+                            </ul>
+                        </nav>
+
+
                 </div>
                 </section>
-                <section class="why-chocko-block">
+                <section class="section reviews_block">
                 <div class="layout-container">
-                    <div class="inner-layout">
-                    <div class="why-chocko-block__inner">
-                        <h1 class="whychocko">ПОЧЕМУ CHOCCO?</h1>
-                        <p class="blackp">В нашем мире все происходит очень быстро, поэтому мы<br> делаем батончики, которые удобно взять с собой.</p>
-                        </div>
-                    
-                    <div class="why-chocko-block__inner">
-                        <div class="why-chocko-block__reason">
-                            <div class="circle-bg"><img src="img/1.svg" alt="" width="66" height="69" class="reasonsvg"></div>
-                            <h3 class="reason__h3">Полезно</h3>
-                            <p class="reason__p">Натуральность - ключевое качество<br> нашей продукции. Мы используем<br> только природные ингридиенты.</p>
-                        </div>
-                        <div class="why-chocko-block__reason">
-                            <div class="circle-bg"><img src="img/3.svg" alt="" width="66" height="69" class="reasonsvg"></div>
-                            <h3 class="reason__h3">Вкусно</h3>
-                            <p class="reason__p">Нежный, ненавязчивый, изысканный – <br>так клиенты описывают вкусовые<br> качества наших батончиков.</p>
-                        </div>
-                        <div class="why-chocko-block__reason">
-                            <div class="circle-bg"><img src="img/2.svg" alt="" width="66" height="69" class="reasonsvg"></div>
-                            <h3 class="reason__h3">Питательно</h3>
-                            <p class="reason__p">Высокое содержание качественного<br> белка, а также всех необходимых<br> витаминов и минералов</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </section>
-                <section class="reviews_block">
-                <div class="layout-container">
-                    <div class="inner-layout">
                         <h2 class="reviews__title">Отзывы</h2>
                         <div class="reviews">
                             <div class="reviews__display">
@@ -128,14 +130,12 @@
                                     </li>
                                 </ul>
                         </div>
-                    </div>
                 </div>
                 </section>
-                        <section class="order-section">
-                        <div class="layout-container">
-                            <div class="inner-layout">
-                                <div class="orderh1div"><h1 class="orderh1">Закажите доставку</h1></div>
-                                <form action="" class="orderform">
+                <section class="section order-section">
+                        <div class="layout-container order-section-container">
+                               <h1 class="order-section__title">Закажите доставку</h1>
+                                <form action="" class="order-section__orderform">
                                     <div class="form__col">
                                         <div class="form__row">
                                             <label for="" class="form__block">
@@ -193,13 +193,13 @@
                                             <div class="form__controls">
                                                 <label class="radio radio--checkbox">
                                                     <input type="checkbox" class="radio__elem">
-                                                    <div class="radio__visible--check"></div>
+                                                    <div class="radio__visible radio__visible--check"></div>
                                                     <div class="radio__title">Оплата по карте</div>
                                                 </label>
                                             </div>
                                             <div class="form__btns">
-                                                <input type="submit" name="offer" value="ЗАКАЗАТЬ" class="offer2">
-                                                <input type="reset" name="offer" value="Очистить" class="offer3">
+                                                <input type="submit" name="offer" value="ЗАКАЗАТЬ" class="form__btns-submit">
+                                                <input type="reset" name="offer" value="Очистить" class="form__btns-clear">
 
 
                                             </div>
@@ -208,14 +208,11 @@
                                     </div>
                                 </form>
 
-
-
-                            </div>
                         </div>
-                        </section>
+                </section>
 
-                
-        </div>
+            </div>     
+
        
 </body>
 </html>
