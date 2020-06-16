@@ -26,13 +26,13 @@
     align-items: flex-start;
 }
 
-.upper-block__main {
+.welcome {
     display: flex;
     
 
 }
 
-.upper-block__inner-main {
+.welcome__inner {
     display: flex;
     flex-direction: column;
     width: 370px;
@@ -43,14 +43,14 @@
     
 }
 
-.inner-main__column:first-child {
+.welcome__title {
     display: flex;
     align-items: flex-start;
     height: 100%;
     width: 370px;
 }
 
-.inner-main__column:nth-child(2) {
+.welcome__text {
     width: 100%;
     height: 100%;
     padding-top: 5px;
@@ -59,67 +59,39 @@
 
 }
 
-.inner-main__column:last-child {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5px;
-    padding-left: 3px;
-    
-
-}
-
-
-
-.upper-block__inner-scroller {
+.features-list {
     display: flex;
-    flex-direction: column;
-    width: 30px;
-    height: 200px;
-    margin-left: 500px;
-    margin-top: 80px;
-    position: relative;
-    
-}
-
-.svgcircle {
-    display: flex;
-    height: 21px;
-    width: 100%;
-    
-}
-
-.upper-block__footer {
-    display: flex;
-    width: 489px;
-    height: 80px;
     margin-bottom: 20px;
-
 }
 
-.upper-block__inner-footer {
+.features-list__item {
     display: flex;
-    width: 163px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+    margin-right: 50px;
 
+    &:last-child {
+        margin-left: 5px;
+    }
 }
 
-.inner-footer__svg {
-    margin-bottom: 17px;
+.features-list__picture {
+    width: 44px;
+    height: 41px;
+    margin-right: 10px;
 }
 
-.batonchikipng {
-    position: absolute;
-    margin-left: 585px;
-    margin-top: 50px;
+.feautures-list__icon {
+    object-fit: cover;
 }
 
-.hidden666 {
-    visibility: hidden;
+.features-list__text {
+    font-size: 16px;
+    font-family: "Alegreya Sans";
+    color: #ffffff;
+    line-height: 1.2;
 }
 
-.inner-main__column-offer {
+
+.welcome_button {
     @include button666;
     background-color: white;
     color: rgb(54, 90, 73);

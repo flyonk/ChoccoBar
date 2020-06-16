@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet');
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -430,15 +431,11 @@ a {
 
 .header {
   color: #ffffff;
-}
-
-.header__inner {
   display: flex;
   justify-content: space-between;
-  height: 73px;
+  padding-top: 24px;
   width: 100%;
   align-items: center;
-  padding: 0;
 }
 
 .header__nav {
@@ -515,11 +512,11 @@ a {
   align-items: flex-start;
 }
 
-.upper-block__main {
+.welcome {
   display: flex;
 }
 
-.upper-block__inner-main {
+.welcome__inner {
   display: flex;
   flex-direction: column;
   width: 370px;
@@ -528,73 +525,51 @@ a {
   align-items: flex-start;
 }
 
-.inner-main__column:first-child {
+.welcome__title {
   display: flex;
   align-items: flex-start;
   height: 100%;
   width: 370px;
 }
 
-.inner-main__column:nth-child(2) {
+.welcome__text {
   width: 100%;
   height: 100%;
   padding-top: 5px;
   padding-left: 1px;
 }
 
-.inner-main__column:last-child {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 5px;
-  padding-left: 3px;
-}
-
-.upper-block__inner-scroller {
+.features-list {
   display: flex;
-  flex-direction: column;
-  width: 30px;
-  height: 200px;
-  margin-left: 500px;
-  margin-top: 80px;
-  position: relative;
-}
-
-.svgcircle {
-  display: flex;
-  height: 21px;
-  width: 100%;
-}
-
-.upper-block__footer {
-  display: flex;
-  width: 489px;
-  height: 80px;
   margin-bottom: 20px;
 }
 
-.upper-block__inner-footer {
+.features-list__item {
   display: flex;
-  width: 163px;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  margin-right: 50px;
+}
+.features-list__item:last-child {
+  margin-left: 5px;
 }
 
-.inner-footer__svg {
-  margin-bottom: 17px;
+.features-list__picture {
+  width: 44px;
+  height: 41px;
+  margin-right: 10px;
 }
 
-.batonchikipng {
-  position: absolute;
-  margin-left: 585px;
-  margin-top: 50px;
+.feautures-list__icon {
+  object-fit: cover;
 }
 
-.hidden666 {
-  visibility: hidden;
+.features-list__text {
+  font-size: 16px;
+  font-family: "Alegreya Sans";
+  color: #ffffff;
+  line-height: 1.2;
 }
 
-.inner-main__column-offer {
+.welcome_button {
   border-radius: 35px;
   border: none;
   font-size: 19px;
@@ -606,10 +581,10 @@ a {
   background-color: white;
   color: #365a49;
 }
-.inner-main__column-offer:focus {
+.welcome_button:focus {
   outline: 0;
 }
-.inner-main__column-offer:hover {
+.welcome_button:hover {
   background-color: #365a49;
   color: white;
 }
@@ -638,11 +613,6 @@ a {
   content: url("../img/малина.png");
   left: 0;
   bottom: -110px;
-}
-
-.whychocco__container {
-  justify-content: flex-start;
-  padding-top: 95px;
 }
 
 .whychocco__title {
@@ -675,22 +645,20 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .whychocco__reason-item:before {
   position: absolute;
   content: url("../img/bubbles.png");
-  top: 32%;
-  right: 65%;
+  top: 30%;
+  right: -27%;
 }
 .whychocco__reason-item:nth-child(2) {
   margin-left: 65px;
   margin-right: 65px;
 }
 .whychocco__reason-item:last-child:before {
-  position: absolute;
-  content: url("../img/bubbles.png");
-  top: 32%;
-  left: 64%;
+  display: none;
 }
 
 .reason-item__img {
@@ -829,7 +797,7 @@ a {
   justify-content: center;
   padding-left: 15px;
   margin: 0;
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .reviews__switcher-item {
@@ -867,12 +835,11 @@ a {
 .order-section__orderform {
   display: flex;
   margin-top: 40px;
-  margin-right: 20px;
 }
 
 .form__col {
   flex: 1;
-  margin-right: 45px;
+  margin-right: 20px;
   width: 50%;
 }
 .form__col:last-child {
@@ -889,7 +856,7 @@ a {
 
 .form__block {
   flex: 1;
-  margin-right: 45px;
+  margin-right: 20px;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -908,9 +875,7 @@ a {
 .form__input--textarea {
   height: 180px;
   resize: none;
-  width: 450px;
-  outline: none;
-  border: none;
+  width: 100%;
 }
 
 .form__controls {

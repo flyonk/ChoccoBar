@@ -29,12 +29,12 @@
 .order-section__orderform {
     display: flex;
     margin-top: 40px;
-    margin-right: 20px;
+
 }
 
 .form__col {
     flex: 1;
-    margin-right: 45px;
+    margin-right: 20px;
     width: 50%;
 
     &:last-child {
@@ -55,7 +55,7 @@
 
 .form__block {
     flex: 1;
-    margin-right: 45px;
+    margin-right: 20px;
 
     &:last-child {
         margin-right: 0;
@@ -64,21 +64,21 @@
 
 .form__input {
     width: 100%;
-    border: none;
     padding: 18px 11px;
     border: solid 3px transparent;
-
-    &:focus {
-        border-color: #dee2bd;
-        outline: none;
-    }
+    
 
     &--textarea {
         height: 180px;
         resize: none;
-        width: 450px;
+        width: 100%;
+        border-color: #dee2bd;
+
+    &:focus {
+        border-color: #dee2bd;
         outline: none;
-        border: none;
+
+
     }
 
 }
