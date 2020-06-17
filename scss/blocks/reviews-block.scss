@@ -5,38 +5,49 @@
         position: absolute;
         content: url('../img/strawberry.png');
         right: 15px;
-        top: 33px;  
+        top: rem(33px);  
     }
 
 }
 
 .reviews__display {
     background: #f2f5f4;
-    padding: 50px 45px 34px;
-    margin-top: 28px;
+    padding: rem(50px) rem(45px) rem(34px);
+    margin-top: rem(28px);
     overflow: hidden;
     position: relative;
 
     &:before {
         content: "";
-        width: 90px;
-        height: 90px;
+        width: rem(90px);
+        height: rem(90px);
         background: #fff;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -65px;
+        top: rem(-65px);
     }
+
+    &:after {
+        content: url('../img/reviewberrys.png');
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        }
+    
 }
 
 .reviews__display-inner {
     display: flex;  
+    position: relative;
+
 }
 
 .reviews__avatar {
-    width: 254px;
-    height: 260px;
+    width: rem(254px);
+    height: rem(260px);
 }
 
 .reviews__textstyle {
@@ -44,7 +55,9 @@
     font-family: "Alegreya Sans";
     color: rgb(102, 102, 102);
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+    position: relative;
+    z-index: 2;
 }
 
 .reviews__author {
@@ -52,6 +65,7 @@
     font-family: "Alegreya Sans Medium";
     line-height: 1.2;
     font-weight: bold;
+    position: relative;
 
 }
 
@@ -70,13 +84,13 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 20px;
+    margin-left: rem(20px);
     padding-top: 15px;
 }
 
 .interactive-avatar {
-    width: 70px;
-    height: 70px;
+    width: rem(70px);
+    height: rem(70px);
     border: 6px solid transparent;
     border-radius: 50%;
     overflow: hidden;
@@ -120,4 +134,27 @@
         top: 10%;
         right: 10%;
     }
+}
+
+.reviews__title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-family: "Alegreya Sans";
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: rem(55px);
+
+}
+
+.reviews__content-title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Alegreya Sans";
+    line-height: 1.2;
+    margin-bottom: rem(22px);
+    position: relative;
+    z-index: 1;
 }

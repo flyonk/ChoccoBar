@@ -365,33 +365,12 @@ p {
   line-height: 1.2;
 }
 
-.inner-footer__p {
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.reviews__title {
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
-  font-family: "Alegreya Sans";
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-top: 55px;
-}
-
-.reviews-title {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: "Alegreya Sans";
-  line-height: 1.2;
-  margin-bottom: 22px;
-}
-
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 ul {
@@ -405,7 +384,7 @@ a {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -420,11 +399,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto;
   padding: 0;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   align-items: center;
   position: relative;
 }
@@ -442,13 +421,9 @@ a {
   display: flex;
   justify-content: flex-start;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 1.667;
   list-style: none;
-  width: 670px;
-  height: 100%;
-  margin-left: 40px;
-  margin-right: 10px;
 }
 
 .header__nav a {
@@ -497,13 +472,13 @@ a {
 .upper-block:before {
   content: url("../img/leaf1.png");
   position: absolute;
-  bottom: -50px;
+  bottom: -3.125rem;
   left: 2%;
 }
 .upper-block:after {
   content: url("../img/hero.png");
   position: absolute;
-  bottom: -50px;
+  bottom: -3.125rem;
   right: 2%;
 }
 
@@ -519,7 +494,7 @@ a {
 .welcome__inner {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  width: 22.5rem;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
@@ -529,7 +504,7 @@ a {
   display: flex;
   align-items: flex-start;
   height: 100%;
-  width: 370px;
+  width: 22.5rem;
 }
 
 .welcome__text {
@@ -541,20 +516,20 @@ a {
 
 .features-list {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .features-list__item {
   display: flex;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 .features-list__item:last-child {
   margin-left: 5px;
 }
 
 .features-list__picture {
-  width: 44px;
-  height: 41px;
+  width: 2.75rem;
+  height: 2.5625rem;
   margin-right: 10px;
 }
 
@@ -570,13 +545,13 @@ a {
 }
 
 .welcome_button {
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   border: none;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 21px 32px;
+  padding: 1.3125rem 2rem;
   display: inline-block;
   background-color: white;
   color: #365a49;
@@ -589,8 +564,8 @@ a {
   color: white;
 }
 
-.button-column {
-  margin-top: 30px;
+.welcome__button-container {
+  margin-top: 1.875rem;
 }
 
 .logo {
@@ -606,19 +581,19 @@ a {
   position: absolute;
   content: url("../img/halfleaf.png");
   left: 0;
-  bottom: 140px;
+  bottom: 8.75rem;
 }
 .whychocco:after {
   position: absolute;
   content: url("../img/малина.png");
   left: 0;
-  bottom: -110px;
+  bottom: -6.875rem;
 }
 
 .whychocco__title {
   font-size: 48px;
   font-family: "Alegreya Sans";
-  color: black;
+  color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
@@ -631,9 +606,8 @@ a {
   color: #666666;
   line-height: 1.2;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
   text-align: center;
+  margin-bottom: 3.125rem;
 }
 
 .whychocco__reason {
@@ -654,16 +628,16 @@ a {
   right: -27%;
 }
 .whychocco__reason-item:nth-child(2) {
-  margin-left: 65px;
-  margin-right: 65px;
+  margin-left: 4.0625rem;
+  margin-right: 4.0625rem;
 }
 .whychocco__reason-item:last-child:before {
   display: none;
 }
 
 .reason-item__img {
-  width: 66px;
-  height: 66px;
+  width: 4.125rem;
+  height: 4.125rem;
 }
 
 .reason-item__text {
@@ -672,7 +646,7 @@ a {
   color: #666666;
   line-height: 1.2;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .reason-item__title {
@@ -682,53 +656,60 @@ a {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+  margin-top: 2.5rem;
 }
 
 .reason-item__img-cover {
   display: flex;
-  height: 120px;
-  width: 120px;
+  height: 7.5rem;
+  width: 7.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: #f2f5f4;
-  margin-top: 50px;
-  margin-bottom: 40px;
 }
 
 .reviews_block:before {
   position: absolute;
   content: url("../img/strawberry.png");
   right: 15px;
-  top: 33px;
+  top: 2.0625rem;
 }
 
 .reviews__display {
   background: #f2f5f4;
-  padding: 50px 45px 34px;
-  margin-top: 28px;
+  padding: 3.125rem 2.8125rem 2.125rem;
+  margin-top: 1.75rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
-  width: 90px;
-  height: 90px;
+  width: 5.625rem;
+  height: 5.625rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -4.0625rem;
+}
+.reviews__display:after {
+  content: url("../img/reviewberrys.png");
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .reviews__display-inner {
   display: flex;
+  position: relative;
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 15.875rem;
+  height: 16.25rem;
 }
 
 .reviews__textstyle {
@@ -736,7 +717,9 @@ a {
   font-family: "Alegreya Sans";
   color: #666666;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  position: relative;
+  z-index: 2;
 }
 
 .reviews__author {
@@ -744,6 +727,7 @@ a {
   font-family: "Alegreya Sans Medium";
   line-height: 1.2;
   font-weight: bold;
+  position: relative;
 }
 
 .reviews__avatar-img {
@@ -760,13 +744,13 @@ a {
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   padding-top: 15px;
 }
 
 .interactive-avatar {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -810,6 +794,28 @@ a {
   right: 10%;
 }
 
+.reviews__title {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "Alegreya Sans";
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 3.4375rem;
+}
+
+.reviews__content-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Alegreya Sans";
+  line-height: 1.2;
+  margin-bottom: 1.375rem;
+  position: relative;
+  z-index: 1;
+}
+
 .order-section {
   background-image: url("../img/background2.png");
 }
@@ -817,29 +823,28 @@ a {
   position: absolute;
   content: url("../img/blackberry.png");
   left: 2%;
-  bottom: 80px;
+  bottom: 5rem;
 }
 .order-section:after {
   position: absolute;
   content: url("../img/ejevika.png");
   right: 10px;
-  top: -150px;
+  top: -9.375rem;
 }
 
 .order-section__title {
-  margin-top: 75px;
   align-self: center;
   color: #365a49;
 }
 
 .order-section__orderform {
   display: flex;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   width: 50%;
 }
 .form__col:last-child {
@@ -848,7 +853,7 @@ a {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 .form__row:last-child {
   flex-wrap: wrap;
@@ -856,7 +861,7 @@ a {
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -864,8 +869,7 @@ a {
 
 .form__input {
   width: 100%;
-  border: none;
-  padding: 18px 11px;
+  padding: 1.125rem 11px;
   border: solid 3px transparent;
 }
 .form__input:focus {
@@ -873,9 +877,14 @@ a {
   outline: none;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 11.25rem;
   resize: none;
   width: 100%;
+  border-color: #dee2bd;
+}
+.form__input--textarea:focus {
+  border-color: #dee2bd;
+  outline: none;
 }
 
 .form__controls {
@@ -901,7 +910,7 @@ a {
 }
 
 .form__btns {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .radio {
@@ -986,13 +995,13 @@ a {
 }
 
 .form__btns-submit {
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   border: none;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 21px 32px;
+  padding: 1.3125rem 2rem;
   display: inline-block;
   background-color: #365a49;
   color: white;
@@ -1006,13 +1015,13 @@ a {
 }
 
 .form__btns-clear {
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   border: none;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 21px 32px;
+  padding: 1.3125rem 2rem;
   display: inline-block;
   background-color: transparent;
   color: black;

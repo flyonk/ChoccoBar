@@ -5,14 +5,14 @@
         position: absolute;
         content: url('../img/halfleaf.png');
         left: 0;
-        bottom: 140px;
+        bottom: rem(140px);
     }
     
     &:after {
         position: absolute;
         content: url('../img/малина.png');
         left: 0;
-        bottom: -110px;
+        bottom: rem(-110px);
     }
 }
 
@@ -21,7 +21,7 @@
 .whychocco__title {
     font-size: 48px;
     font-family: "Alegreya Sans";
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
@@ -36,9 +36,8 @@
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
     text-align: center;
+    margin-bottom: rem(50px);
 
 }
 
@@ -63,8 +62,8 @@
         }
 
     &:nth-child(2) {
-        margin-left: 65px;
-        margin-right: 65px;
+        margin-left: rem(65px);
+        margin-right: rem(65px);
     }
 
     &:last-child {
@@ -77,8 +76,8 @@
 }
 
 .reason-item__img {
-    width: 66px;
-    height: 66px;
+    width: rem(66px);
+    height: rem(66px);
 }
 
 .reason-item__text {
@@ -87,7 +86,7 @@
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
-    margin-top: 20px;
+    margin-top: rem(20px);
 }
 
 .reason-item__title {
@@ -97,20 +96,22 @@
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    margin-top: rem(40px);
     
 }
 
 .reason-item__img-cover {
     display: flex;
-    height: 120px;
-    width: 120px;
+    height: rem(120px);
+    width: rem(120px);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: #f2f5f4;
-    margin-top: 50px;
-    margin-bottom: 40px;
+
 
 }
+
+
 
 

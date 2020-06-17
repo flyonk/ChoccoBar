@@ -8,14 +8,14 @@
     &:before {
         content: url('../img/leaf1.png');
         position: absolute;
-        bottom: -50px;
+        bottom: rem(-50px);
         left: 2%;
     }
 
     &:after {
         content: url('../img/hero.png');
         position: absolute;
-        bottom: -50px;
+        bottom: rem(-50px);
         right: 2%;
     }
 
@@ -35,7 +35,7 @@
 .welcome__inner {
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: rem(360px);
     height: 100%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -47,7 +47,7 @@
     display: flex;
     align-items: flex-start;
     height: 100%;
-    width: 370px;
+    width: rem(360px);
 }
 
 .welcome__text {
@@ -61,12 +61,12 @@
 
 .features-list {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .features-list__item {
     display: flex;
-    margin-right: 50px;
+    margin-right: rem(50px);
 
     &:last-child {
         margin-left: 5px;
@@ -74,8 +74,8 @@
 }
 
 .features-list__picture {
-    width: 44px;
-    height: 41px;
+    width: rem(44px);
+    height: rem(41px);
     margin-right: 10px;
 }
 
@@ -94,7 +94,7 @@
 .welcome_button {
     @include button666;
     background-color: white;
-    color: rgb(54, 90, 73);
+    color: $green;
 
     &:hover {
         background-color: #365a49;
@@ -102,6 +102,6 @@
     }
 }
 
-.button-column {
-    margin-top: 30px;
+.welcome__button-container {
+    margin-top: rem(30px);
 }

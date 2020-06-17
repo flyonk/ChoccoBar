@@ -1,4 +1,6 @@
 $black:#000000;
+$gray: rgb(255, 255, 255);
+$green: #365a49;
 
 
 body {
@@ -12,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
     font-size: 48px;
     font-family: "Alegreya Sans";
-    color: rgb(255, 255, 255);
+    color: $gray;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
@@ -22,39 +24,9 @@ h1 {
 p {
     font-size: 21px;
     font-family: "Alegreya Sans";
-    color: rgb(255, 255, 255);
+    color: $gray;
     text-align: left;
     line-height: 1.2;
 }
 
-
-
-
-
-.inner-footer__p {
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-
-.reviews__title {
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    font-family: "Alegreya Sans";
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin-top: 55px;
-
-}
-
-.reviews-title {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Alegreya Sans";
-    line-height: 1.2;
-    margin-bottom: 22px;
-}
 
