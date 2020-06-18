@@ -382,6 +382,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .section {
   height: 100vh;
   min-height: 40.625rem;
@@ -439,14 +443,11 @@ a {
 }
 
 .header__phone-icon {
-  height: 12px;
   width: 12px;
+  height: 11px;
   margin-right: 6px;
-}
-
-.header__phone-image {
-  min-width: 100%;
-  display: block;
+  fill: #ffffff;
+  stroke-width: 1;
 }
 
 .header__phone-text {
@@ -569,8 +570,8 @@ a {
 }
 
 .logo {
-  width: 53px;
-  height: 39px;
+  width: 3.3125rem;
+  height: 2.4375rem;
 }
 
 .logo__image {
@@ -624,7 +625,7 @@ a {
 .whychocco__reason-item:before {
   position: absolute;
   content: url("../img/bubbles.png");
-  top: 30%;
+  top: 17%;
   right: -27%;
 }
 .whychocco__reason-item:nth-child(2) {
@@ -1034,5 +1035,71 @@ a {
 .form__btns-clear:hover {
   color: white;
   text-decoration: none;
+}
+
+.footer-block__map {
+  background: url("../img/map.png") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-block__contacts {
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 5.8125rem;
+}
+
+.footer-block__adress {
+  display: flex;
+  flex-direction: column;
+  width: 17.5rem;
+}
+
+.footer-block__adress-street {
+  font-size: 21px;
+  font-family: "Alegreya Sans";
+  color: #000000;
+  line-height: 1.143;
+  text-align: left;
+}
+
+.footer-block__adress-phone-icon {
+  width: 12px;
+  height: 11px;
+  margin-right: 6px;
+  fill: #ffffff;
+  stroke-width: 1;
+}
+
+.footer-block__adress-phone-text {
+  font-size: 21px;
+  font-family: "Alegreya Sans";
+  color: #365a49;
+  text-transform: uppercase;
+  line-height: 1.429;
+  text-align: left;
+}
+
+.footer-block__medias {
+  display: flex;
+}
+
+.footer-block__medias-item {
+  margin-right: 5px;
+}
+.footer-block__medias-item:last-child {
+  margin-right: 0;
+}
+
+.footer-block__medias-icon {
+  width: 23px;
+  height: 13px;
+  fill: gray;
+}
+.footer-block__medias-icon:active {
+  fill: black;
 }
 /*# sourceMappingURL=main.css.map */

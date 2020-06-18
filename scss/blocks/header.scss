@@ -40,14 +40,11 @@
 
 
 .header__phone-icon {
-    height: 12px;
     width: 12px;
+    height: 11px;
     margin-right: 6px;
-}
-
-.header__phone-image {
-    min-width: 100%;
-    display: block;
+    fill: #ffffff;
+    stroke-width: 1;
 }
 
 .header__phone-text {
