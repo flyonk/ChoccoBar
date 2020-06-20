@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <title>batoncheg.ru</title>
 </head>
@@ -12,7 +12,7 @@
                 <div class="layout-container upper-block__container">
                     <header class="header">
                          <div class="logo"><img src="img/logo.png" alt="logo" class="logo__image"></div>
-                         <nav class="">
+                         <nav class="menu">
                             <ul class="header__nav">
                                 <li class="headev__nav-item"><a href="" class="headev__nav-item">О нас</a></li>
                                 <li class="headev__nav-item"><a href="" class="headev__nav-item">Батончики</a></li>
@@ -23,9 +23,14 @@
                                 <li class="headev__nav-item"><a href="" class="headev__nav-item">Контакты</a></li>
                             </ul>
                         </nav>
-                        <a href="tel:+78009039090" class="header__phone">
-                            <svg class="header__phone-icon"><use xlink:href="sprite.svg#phone1"></use></svg>
+                        <a href="tel:+78009039090" class="header__phone header__phone-number">
+                            <svg class="header__phone-icon"><use xlink:href="svg/sprite.svg#phone1"></use></svg>
                             <span class="header__phone-text">8 800 903 90 90</span>
+                        </a>
+                        <a href="" class="hamburger">
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
+                            <span class="hamburger__plank"></span>
                         </a>
 
                     
@@ -41,7 +46,7 @@
                             
 
                         </div>
-                            <ul class="features-list">
+                            <ul class="upper-block__features-list feautres-list">
                                 <li class="features-list__item">
                                     <div class="features-list__picture"><img src="img/leaf.svg" alt="" class="features-list__icon"></div>
                                     <div class="features-list__text">100%<br> натуральный<br> продукт</div>
@@ -84,7 +89,7 @@
                 </div>
                 </section>
                 <section class="section reviews_block">
-                <div class="layout-container">
+                <div class="layout-container reviews_block-container">
                         <h2 class="reviews__title">Отзывы</h2>
                         <div class="reviews">
                             <div class="reviews__display">
@@ -95,9 +100,9 @@
                                     <article class="reviews__content">
                                         <h3 class="reviews__content-title">Лучший перекус</h3>
                                         <div class="reviews__text">
-                                            <p class="reviews__textstyle">Я ем малыми порциями, но часто. Это повышает мою<br> продуктивность в разы. 
-                                                В течение дня сижу за компьютером<br> и часто отходить в кафе или на кухню
-                                                просто не могу себе<br> позволить. А батончик - он всегда под рукой. Это приятно<br> и удобно.
+                                            <p class="reviews__textstyle">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. 
+                                                В течение дня сижу за компьютером и часто отходить в кафе или на кухню
+                                                просто не могу себе позволить. А батончик - он всегда под рукой. Это приятно и удобно.
                                             </p>
                                         </div>
                                         <div class="reviews__author">
@@ -168,7 +173,7 @@
                                     </div>
                                     <div class="form__col">
                                         <div class="form__row">
-                                            <label class="form__block">
+                                            <label class="form__block form__block-textarea">
                                                 <div class="form__title">Комментарий</div>
                                                 <textarea class="form__input form__input--textarea"></textarea>
                                             </label>
@@ -201,17 +206,18 @@
 
                         </div>
                 </section>
-                <section class="footer-block">
-                    <div class="layout-container footer-block-container">
-                        <div class="footer-block__map"></div>
+                <section class="footer-block section">
+                    <div class="footer-block__map"></div>                   
                         <footer class="footer-block__contacts">
+                            <div class="layout-container footer-block-container">
                             <div class="footer-block__adress">
                                 <h3 class="footer-block__adress-street">Москва, ул.Новый Арбат, д.31/12</h3>
                                 <div class="footer-block__adress-phone">
-                                    <svg class="footer-block__adress-phone-icon" width="12" height="11" fill="white">
-                                        <use xlink:href="xlink:href="sprite.svg#phone1""></use>       
+                                    <a class="footer-block__adress-phone-text" href="tel:+78009039090">
+                                    <svg class="footer-block__adress-phone-icon">
+                                        <use xlink:href="svg/sprite.svg#phone1"></use>
                                     </svg>
-                                    <a class="footer-block__adress-phone-text" href="tel:+78009039090">8 800 903 90 90</a>
+                                    8 800 903 90 90</a>
                                 </div>
                             </div>
                             <ul class="footer-block__medias">
@@ -236,8 +242,9 @@
                                     </svg>
                                 </li>
                             </ul>
+                            </div>
                         </footer>
-                    </div>
+                    
             </section>
 
             </div>     

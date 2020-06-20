@@ -370,7 +370,17 @@ p {
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 ul {
@@ -388,28 +398,40 @@ li {
 
 .section {
   height: 100vh;
-  min-height: 40.625rem;
+  min-height: rem(650px);
   display: flex;
   align-items: center;
   position: relative;
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .layout-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 58.75rem;
+  max-width: rem(940px);
   margin: 0 auto;
   padding: 0;
-  height: 100vh;
-  min-height: 40.625rem;
-  align-items: center;
   position: relative;
+}
+
+.menu {
+  margin: 0 30px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__phone.header__phone-number {
+    display: none;
+  }
 }
 
 .header {
@@ -418,12 +440,20 @@ li {
   justify-content: space-between;
   padding-top: 24px;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 1.4444444444rem;
+  }
 }
 
 .header__nav {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   text-decoration: none;
   font-size: 28px;
   line-height: 1.667;
@@ -448,11 +478,13 @@ li {
   margin-right: 6px;
   fill: #ffffff;
   stroke-width: 1;
+  flex-shrink: 0;
 }
 
 .header__phone-text {
   font-size: 24px;
   color: inherit;
+  white-space: nowrap;
 }
 
 .headev__nav-item {
@@ -461,6 +493,8 @@ li {
   font-family: "Alegreya Sans";
   line-height: 1.667;
   color: inherit;
+  white-space: nowrap;
+  margin-bottom: 10px;
 }
 .headev__nav-item:last-child {
   margin-right: 0;
@@ -470,22 +504,40 @@ li {
   background: url("../img/choccolates.png") left 94% center no-repeat, url("../img/фон.png") center right no-repeat;
   background-color: #61C4D9;
 }
+@media screen and (max-width: 768px) {
+  .upper-block {
+    background: url("../img/фон.png") right bottom 88% no-repeat;
+    background-color: #61C4D9;
+  }
+}
+@media screen and (max-width: 768px) {
+  .upper-block:before, .upper-block:after {
+    display: none;
+  }
+}
 .upper-block:before {
   content: url("../img/leaf1.png");
   position: absolute;
-  bottom: -3.125rem;
+  bottom: -2.7777777778rem;
   left: 2%;
 }
 .upper-block:after {
   content: url("../img/hero.png");
   position: absolute;
-  bottom: -3.125rem;
+  bottom: -2.7777777778rem;
   right: 2%;
 }
 
 .upper-block__container {
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .upper-block__container {
+    justify-content: center;
+  }
 }
 
 .welcome {
@@ -495,42 +547,70 @@ li {
 .welcome__inner {
   display: flex;
   flex-direction: column;
-  width: 22.5rem;
+  width: 46%;
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .welcome__inner {
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .welcome__inner:before {
+    content: url("../img/welcome_tablets_decor.png");
+  }
 }
 
 .welcome__title {
   display: flex;
   align-items: flex-start;
   height: 100%;
-  width: 22.5rem;
+}
+@media screen and (max-width: 768px) {
+  .welcome__title {
+    margin-top: 10px;
+  }
 }
 
 .welcome__text {
+  display: flex;
   width: 100%;
   height: 100%;
   padding-top: 5px;
-  padding-left: 1px;
+}
+@media screen and (max-width: 768px) {
+  .welcome__text {
+    padding: 0 25%;
+    margin-top: 10px;
+  }
 }
 
-.features-list {
+@media screen and (max-width: 768px) {
+  .upper-block__features-list.feautres-list {
+    display: none;
+  }
+}
+
+.upper-block__features-list {
   display: flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1111111111rem;
 }
 
 .features-list__item {
   display: flex;
-  margin-right: 3.125rem;
+  margin-right: 2.7777777778rem;
 }
 .features-list__item:last-child {
   margin-left: 5px;
 }
 
 .features-list__picture {
-  width: 2.75rem;
-  height: 2.5625rem;
+  width: 2.4444444444rem;
+  height: 2.2777777778rem;
   margin-right: 10px;
 }
 
@@ -546,13 +626,13 @@ li {
 }
 
 .welcome_button {
-  border-radius: 2.1875rem;
+  border-radius: 1.9444444444rem;
   border: none;
-  font-size: 1.1875rem;
+  font-size: 1.0555555556rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 1.3125rem 2rem;
+  padding: 1.1666666667rem 1.7777777778rem;
   display: inline-block;
   background-color: white;
   color: #365a49;
@@ -566,12 +646,12 @@ li {
 }
 
 .welcome__button-container {
-  margin-top: 1.875rem;
+  margin-top: 1.6666666667rem;
 }
 
 .logo {
-  width: 3.3125rem;
-  height: 2.4375rem;
+  width: 2.9444444444rem;
+  height: 2.1666666667rem;
 }
 
 .logo__image {
@@ -582,13 +662,23 @@ li {
   position: absolute;
   content: url("../img/halfleaf.png");
   left: 0;
-  bottom: 8.75rem;
+  bottom: 7.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .whychocco:before {
+    bottom: 24.4444444444rem;
+  }
 }
 .whychocco:after {
   position: absolute;
   content: url("../img/малина.png");
   left: 0;
-  bottom: -6.875rem;
+  bottom: -6.1111111111rem;
+}
+
+.whychocco__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .whychocco__title {
@@ -608,7 +698,7 @@ li {
   line-height: 1.2;
   text-align: center;
   text-align: center;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.7777777778rem;
 }
 
 .whychocco__reason {
@@ -628,17 +718,22 @@ li {
   top: 17%;
   right: -27%;
 }
+@media screen and (max-width: 768px) {
+  .whychocco__reason-item:before {
+    display: none;
+  }
+}
 .whychocco__reason-item:nth-child(2) {
-  margin-left: 4.0625rem;
-  margin-right: 4.0625rem;
+  margin-left: 3.6111111111rem;
+  margin-right: 3.6111111111rem;
 }
 .whychocco__reason-item:last-child:before {
   display: none;
 }
 
 .reason-item__img {
-  width: 4.125rem;
-  height: 4.125rem;
+  width: 3.6666666667rem;
+  height: 3.6666666667rem;
 }
 
 .reason-item__text {
@@ -647,7 +742,7 @@ li {
   color: #666666;
   line-height: 1.2;
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 1.1111111111rem;
 }
 
 .reason-item__title {
@@ -657,13 +752,13 @@ li {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 2.2222222222rem;
 }
 
 .reason-item__img-cover {
   display: flex;
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 6.6666666667rem;
+  width: 6.6666666667rem;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -674,26 +769,32 @@ li {
   position: absolute;
   content: url("../img/strawberry.png");
   right: 15px;
-  top: 2.0625rem;
+  top: 1.8333333333rem;
+}
+
+.reviews_block-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__display {
-  background: #f2f5f4;
-  padding: 3.125rem 2.8125rem 2.125rem;
-  margin-top: 1.75rem;
+  background: #F8FAF9;
+  padding: 2.7777777778rem 2.5rem 1.8888888889rem;
+  margin-top: 1.5555555556rem;
   overflow: hidden;
   position: relative;
+  max-width: 52.2222222222rem;
 }
 .reviews__display:before {
   content: "";
-  width: 5.625rem;
-  height: 5.625rem;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -4.0625rem;
+  top: -3.6111111111rem;
 }
 .reviews__display:after {
   content: url("../img/reviewberrys.png");
@@ -702,15 +803,34 @@ li {
   top: 0;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display {
+    margin-top: 2.2222222222rem;
+    padding: 3.3333333333rem 2.5rem 1.8888888889rem;
+  }
+}
 
 .reviews__display-inner {
   display: flex;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .reviews__avatar {
-  width: 15.875rem;
-  height: 16.25rem;
+  width: 14.1111111111rem;
+  height: 14.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.6666666667rem;
+    height: 8.0555555556rem;
+  }
 }
 
 .reviews__textstyle {
@@ -718,9 +838,14 @@ li {
   font-family: "Alegreya Sans";
   color: #666666;
   line-height: 1.2;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.6666666667rem;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .reviews__textstyle {
+    width: 100%;
+  }
 }
 
 .reviews__author {
@@ -745,13 +870,18 @@ li {
 
 .reviews__content {
   flex: 1;
-  margin-left: 1.25rem;
+  margin-left: 1.1111111111rem;
   padding-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    width: 95%;
+  }
 }
 
 .interactive-avatar {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 3.8888888889rem;
+  height: 3.8888888889rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -804,7 +934,11 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-top: 3.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-top: 45px;
+  }
 }
 
 .reviews__content-title {
@@ -812,7 +946,7 @@ li {
   font-weight: bold;
   font-family: "Alegreya Sans";
   line-height: 1.2;
-  margin-bottom: 1.375rem;
+  margin-bottom: 1.2222222222rem;
   position: relative;
   z-index: 1;
 }
@@ -824,37 +958,57 @@ li {
   position: absolute;
   content: url("../img/blackberry.png");
   left: 2%;
-  bottom: 5rem;
+  bottom: 4.4444444444rem;
+  z-index: 1;
 }
 .order-section:after {
   position: absolute;
   content: url("../img/ejevika.png");
   right: 10px;
-  top: -9.375rem;
+  top: -8.3333333333rem;
+  z-index: 1;
+}
+
+.order-section-container {
+  flex-direction: column;
 }
 
 .order-section__title {
   align-self: center;
   color: #365a49;
+  z-index: 2;
 }
 
 .order-section__orderform {
   display: flex;
-  margin-top: 2.5rem;
+  margin-top: 2.2222222222rem;
+  z-index: 2;
+  max-width: 52.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .order-section__orderform {
+    flex-direction: column;
+    padding: 0 19%;
+  }
 }
 
 .form__col {
   flex: 1;
-  margin-right: 1.25rem;
+  margin-right: 1.1111111111rem;
   width: 50%;
 }
 .form__col:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .form__col {
+    width: 100%;
+  }
+}
 
 .form__row {
   display: flex;
-  margin-bottom: 1.125rem;
+  margin-bottom: 1rem;
 }
 .form__row:last-child {
   flex-wrap: wrap;
@@ -862,15 +1016,19 @@ li {
 
 .form__block {
   flex: 1;
-  margin-right: 1.25rem;
+  margin-right: 1.1111111111rem;
 }
 .form__block:last-child {
   margin-right: 0;
 }
 
+.form__block.form__block-textarea {
+  margin-right: 0;
+}
+
 .form__input {
   width: 100%;
-  padding: 1.125rem 11px;
+  padding: 1rem 11px;
   border: solid 3px transparent;
 }
 .form__input:focus {
@@ -878,10 +1036,9 @@ li {
   outline: none;
 }
 .form__input--textarea {
-  height: 11.25rem;
+  height: 10rem;
   resize: none;
   width: 100%;
-  border-color: #dee2bd;
 }
 .form__input--textarea:focus {
   border-color: #dee2bd;
@@ -911,7 +1068,7 @@ li {
 }
 
 .form__btns {
-  margin-top: 1.25rem;
+  margin-top: 1.1111111111rem;
 }
 
 .radio {
@@ -996,13 +1153,13 @@ li {
 }
 
 .form__btns-submit {
-  border-radius: 2.1875rem;
+  border-radius: 1.9444444444rem;
   border: none;
-  font-size: 1.1875rem;
+  font-size: 1.0555555556rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 1.3125rem 2rem;
+  padding: 1.1666666667rem 1.7777777778rem;
   display: inline-block;
   background-color: #365a49;
   color: white;
@@ -1016,13 +1173,13 @@ li {
 }
 
 .form__btns-clear {
-  border-radius: 2.1875rem;
+  border-radius: 1.9444444444rem;
   border: none;
-  font-size: 1.1875rem;
+  font-size: 1.0555555556rem;
   font-family: "Alegreya Sans ExtraBold";
   text-transform: uppercase;
   line-height: normal;
-  padding: 1.3125rem 2rem;
+  padding: 1.1666666667rem 1.7777777778rem;
   display: inline-block;
   background-color: transparent;
   color: black;
@@ -1037,25 +1194,35 @@ li {
   text-decoration: none;
 }
 
+.footer-block-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-block {
+  width: 100%;
+}
+
 .footer-block__map {
-  background: url("../img/map.png") no-repeat;
+  background: url("../img/map.png") center center/cover no-repeat;
   width: 100%;
   height: 100%;
 }
 
 .footer-block__contacts {
   position: absolute;
-  bottom: 20%;
+  bottom: 0;
+  left: 0;
   display: flex;
-  justify-content: space-around;
   width: 100%;
-  height: 5.8125rem;
+  height: 5.1666666667rem;
+  background: white;
 }
 
 .footer-block__adress {
   display: flex;
   flex-direction: column;
-  width: 17.5rem;
+  width: 15.5555555556rem;
 }
 
 .footer-block__adress-street {
@@ -1069,9 +1236,7 @@ li {
 .footer-block__adress-phone-icon {
   width: 12px;
   height: 11px;
-  margin-right: 6px;
   fill: #ffffff;
-  stroke-width: 1;
 }
 
 .footer-block__adress-phone-text {
@@ -1085,6 +1250,7 @@ li {
 
 .footer-block__medias {
   display: flex;
+  margin-left: 27.7777777778rem;
 }
 
 .footer-block__medias-item {
@@ -1101,5 +1267,27 @@ li {
 }
 .footer-block__medias-icon:active {
   fill: black;
+}
+
+.hamburger {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+    margin-right: 1.9444444444rem;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #ffffff;
+  height: 4px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

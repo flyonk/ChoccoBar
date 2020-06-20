@@ -1,15 +1,32 @@
-@function rem($px) {
-    @return $px / 16px+0rem;
-}
-
-
+$tablets: 768px;
+$phones: 480px;
 
 * {
     box-sizing: border-box;
 }
 
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
 html {
-    font-size: 16px;
+    font-size: $GlobalFontSize;
+
+    @include tablets {
+        font-size: $GlobalFontSize - 1px;
+    }
+
+    @include tablets {
+        font-size: $GlobalFontSize - 2px;
+    }
 }
 
 
@@ -59,21 +76,20 @@ li {
 
 
 .wrapper {
+    position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
 
 }
 
 .layout-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: rem(940px);
+    max-width: rem(940px);
     margin: 0 auto;
     padding: 0;
-    height: 100vh;
-    min-height: rem(650px);
-    align-items: center;
     position: relative;
+
+
 }
 
