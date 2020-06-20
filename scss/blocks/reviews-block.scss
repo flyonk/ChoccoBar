@@ -8,6 +8,10 @@
         top: rem(33px);  
     }
 
+    @include phones {
+        display: none;
+    }
+
 }
 
 .reviews_block-container {
@@ -46,6 +50,7 @@
         @include tablets {
             margin-top:rem(40px);
             padding: rem(60px) rem(45px) rem(34px);
+            margin-bottom: rem(70px);
         }
 }
 
@@ -126,9 +131,15 @@
     overflow: hidden;
     position: relative;
 
+    @include tablets {
+        width: rem(100px);
+        height: rem(100px);
+    }
+
     &:active {
         border-color: #365a49;
     }
+
 }
 
 .interactive-avatar__link {
@@ -163,6 +174,10 @@
         position: absolute;
         top: 10%;
         right: 10%;
+
+        @include phones {
+            display: none;
+        }
     }
 }
 

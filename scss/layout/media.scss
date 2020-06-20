@@ -1,5 +1,3 @@
-$GlobalFontSize: 18px;
-
 @function rem($px) {
     @return $px / $GlobalFontSize + 0rem;
 }

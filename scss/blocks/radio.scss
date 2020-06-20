@@ -5,6 +5,10 @@
 
     &:nth-child(2) {
         margin-left: 25px;
+
+        @include tablets {
+            margin-left: 0;
+        }
     }
 
     &:before {
@@ -92,6 +96,10 @@
 
 .form__btns {
     margin-left: 20px;
+
+    @include phones {
+        margin-left: 90px;
+    }
 }
 
 .form__btns-submit {

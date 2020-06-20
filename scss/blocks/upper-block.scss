@@ -64,7 +64,11 @@
         text-align: center;
 
         &:before {
-            content: url('../img/welcome_tablets_decor.png');
+            content: "";
+            min-width: rem(350px);
+            min-height: rem(370px);
+            background: url('../img/welcome_tablets_decor.png') center center / contain no-repeat;
+            margin-bottom: rem(16px);
         }
     }
     
@@ -74,6 +78,7 @@
     display: flex;
     align-items: flex-start;
     height: 100%;
+    font-size: 48px;
     
     @include tablets {
         margin-top: 10px;
@@ -89,6 +94,11 @@
 
     @include tablets {
         padding: 0 25%;
+        margin-top: 10px;
+    }
+
+    @include tablets {
+        padding: 0 15%;
         margin-top: 10px;
     }
 

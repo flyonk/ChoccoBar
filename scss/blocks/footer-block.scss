@@ -2,6 +2,14 @@
     display: flex;
     align-items: center;
 
+    @include tablets {
+        width: 60%;
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+
 }
 
 .footer-block {
@@ -24,24 +32,36 @@
     background: white;
 }
 
+.footer-block__adress {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .footer-block__adress-street {
     font-size: 21px;
     font-family: "Alegreya Sans";
     color: $black;
     line-height: 1.143;
     text-align: left;
+    white-space: nowrap;
+
 
 }
 
 .footer-bock__adress-phone {
     color: rgb(54, 90, 73);
+
+
 }
 
 
 .footer-block__adress-phone-icon {
     width: 12px;
     height: 11px;
-    fill: #ffffff;
+    fill: #000000;
 
 }
 
@@ -53,12 +73,21 @@
     text-transform: uppercase;
     line-height: 1.429;
     text-align: left;
+    font-weight: bold;
 
 }
 
 .footer-block__medias {
     display: flex;
-    margin-left: rem(55s0px);
+    margin-left: rem(550px);
+
+    @include tablets {
+        margin-left: rem(150px);
+    }
+
+    @include phones {
+        margin-left: 0;
+    }
 
 }
 
