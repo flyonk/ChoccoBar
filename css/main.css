@@ -413,15 +413,13 @@ li {
 
 .layout-container {
   display: flex;
-  max-width: rem(940px);
+  max-width: 940px;
   margin: 0 auto;
   padding: 0;
   position: relative;
+  width: 95%;
 }
 
-.menu {
-  margin: 0 30px;
-}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -444,9 +442,12 @@ li {
 }
 @media screen and (max-width: 768px) {
   .header {
-    position: absolute;
-    top: 0;
-    left: 1.4444444444rem;
+    margin-bottom: 6.6666666667rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 1.5555555556rem;
   }
 }
 
@@ -501,7 +502,7 @@ li {
 }
 
 .upper-block {
-  background: url("../img/choccolates.png") left 94% center no-repeat, url("../img/фон.png") center right no-repeat;
+  background: url("../img/фон.png") center right no-repeat;
   background-color: #61C4D9;
 }
 @media screen and (max-width: 768px) {
@@ -533,10 +534,12 @@ li {
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
+  background: url("../img/choccolates.png") left 94% center no-repeat;
 }
 @media screen and (max-width: 768px) {
   .upper-block__container {
-    justify-content: center;
+    justify-content: flex-start;
+    background: none;
   }
 }
 
@@ -573,11 +576,12 @@ li {
   display: flex;
   align-items: flex-start;
   height: 100%;
-  font-size: 48px;
+  font-size: 2.6666666667rem;
 }
 @media screen and (max-width: 768px) {
   .welcome__title {
     margin-top: 10px;
+    font-size: 2.2222222222rem;
   }
 }
 
@@ -588,15 +592,19 @@ li {
   padding-top: 5px;
 }
 @media screen and (max-width: 768px) {
+  .welcome__text p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .welcome__text {
     padding: 0 25%;
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .welcome__text {
-    padding: 0 15%;
-    margin-top: 10px;
+    padding: 0 5%;
   }
 }
 
@@ -661,12 +669,12 @@ li {
 }
 
 .logo {
-  width: 2.9444444444rem;
-  height: 2.1666666667rem;
+  width: 53px;
+  height: 38px;
 }
 
 .logo__image {
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .whychocco:before {
@@ -703,13 +711,18 @@ li {
 }
 
 .whychocco__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-family: "Alegreya Sans";
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .whychocco__title {
+    font-size: 2.2222222222rem;
+  }
 }
 
 .whychocco__description {
@@ -718,8 +731,20 @@ li {
   color: #666666;
   line-height: 1.2;
   text-align: center;
-  text-align: center;
+  max-width: 22.2222222222rem;
+  margin: 0 auto;
   margin-bottom: 2.7777777778rem;
+}
+@media screen and (max-width: 768px) {
+  .whychocco__description {
+    max-width: unset;
+    padding: 0 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whychocco__description {
+    padding: 0;
+  }
 }
 
 .whychocco__reason {
@@ -756,8 +781,14 @@ li {
   }
 }
 .whychocco__reason-item:nth-child(2) {
-  margin-left: 3.6111111111rem;
-  margin-right: 3.6111111111rem;
+  margin-left: 3.3333333333rem;
+  margin-right: 3.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .whychocco__reason-item:nth-child(2) {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
 }
 @media screen and (max-width: 480px) {
   .whychocco__reason-item:nth-child(2) {
@@ -776,7 +807,7 @@ li {
 
 @media screen and (max-width: 480px) {
   .reason-item__text-container {
-    margin-left: 1.6666666667rem;
+    margin-left: 1.1111111111rem;
   }
 }
 
@@ -793,6 +824,7 @@ li {
     padding: 0;
     margin-top: 0;
     font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -819,6 +851,7 @@ li {
   justify-content: center;
   border-radius: 50%;
   background-color: #f2f5f4;
+  flex-shrink: 0;
 }
 
 .reviews_block:before {
@@ -833,15 +866,21 @@ li {
   }
 }
 
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
 .reviews_block-container {
   display: flex;
   flex-direction: column;
 }
 
 .reviews__display {
+  display: flex;
+  justify-content: center;
   background: #F8FAF9;
   padding: 2.7777777778rem 2.5rem 1.8888888889rem;
-  margin-top: 1.5555555556rem;
   overflow: hidden;
   position: relative;
   max-width: 52.2222222222rem;
@@ -866,10 +905,21 @@ li {
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
-    margin-top: 2.2222222222rem;
-    padding: 3.3333333333rem 2.5rem 1.8888888889rem;
+    padding: 3.3333333333rem 1.1111111111rem 1.8888888889rem;
     margin-bottom: 3.8888888889rem;
   }
+}
+
+.reviews__title {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "Alegreya Sans";
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .reviews__display-inner {
@@ -895,12 +945,15 @@ li {
   }
 }
 
+.reviews__text {
+  margin-bottom: 1.6666666667rem;
+}
+
 .reviews__textstyle {
   font-size: 18px;
   font-family: "Alegreya Sans";
   color: #666666;
   line-height: 1.2;
-  margin-bottom: 1.6666666667rem;
   position: relative;
   z-index: 2;
 }
@@ -938,6 +991,7 @@ li {
 @media screen and (max-width: 768px) {
   .reviews__content {
     width: 95%;
+    margin-left: 0;
   }
 }
 
@@ -998,22 +1052,6 @@ li {
   }
 }
 
-.reviews__title {
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
-  font-family: "Alegreya Sans";
-  color: #000000;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-@media screen and (max-width: 768px) {
-  .reviews__title {
-    margin-top: 45px;
-  }
-}
-
 .reviews__content-title {
   font-size: 30px;
   font-weight: bold;
@@ -1068,11 +1106,12 @@ li {
   margin-top: 2.2222222222rem;
   z-index: 2;
   max-width: 52.2222222222rem;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .order-section__orderform {
     flex-direction: column;
-    padding: 0 19%;
+    max-width: 25.5555555556rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1092,6 +1131,7 @@ li {
 @media screen and (max-width: 768px) {
   .form__col {
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -1133,6 +1173,7 @@ li {
   height: 10rem;
   resize: none;
   width: 100%;
+  margin-bottom: 1.7222222222rem;
 }
 .form__input--textarea:focus {
   border-color: #dee2bd;
@@ -1143,12 +1184,19 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
 }
 @media screen and (max-width: 480px) {
   .form__controls {
     justify-content: center;
     margin-top: 0;
+  }
+}
+.form__controls--checkbox {
+  margin-top: 0.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .form__controls--checkbox {
+    margin-bottom: 0.8333333333rem;
   }
 }
 
@@ -1187,7 +1235,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .radio:nth-child(2) {
-    margin-left: 0;
+    margin-left: 1.1111111111rem;
   }
 }
 .radio:before {
@@ -1313,14 +1361,10 @@ li {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .footer-block-container {
-    width: 60%;
-  }
-}
 @media screen and (max-width: 480px) {
   .footer-block-container {
     flex-direction: column;
+    justify-content: space-around;
   }
 }
 
@@ -1343,12 +1387,18 @@ li {
   height: 5.1666666667rem;
   background: white;
 }
+@media screen and (max-width: 480px) {
+  .footer-block__contacts {
+    height: 7.7777777778rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .footer-block__adress {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -1361,8 +1411,13 @@ li {
   white-space: nowrap;
 }
 
-.footer-bock__adress-phone {
+.footer-block__adress-phone {
   color: #365a49;
+}
+@media screen and (max-width: 480px) {
+  .footer-block__adress-phone {
+    margin-top: 12px;
+  }
 }
 
 .footer-block__adress-phone-icon {
@@ -1387,7 +1442,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .footer-block__medias {
-    margin-left: 8.3333333333rem;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1423,7 +1478,6 @@ li {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
-    margin-right: 2.2222222222rem;
   }
 }
 

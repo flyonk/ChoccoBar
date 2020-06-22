@@ -1,5 +1,4 @@
 .menu {
-    margin: 0 30px;
     @include tablets {
         display: none;
     }
@@ -20,10 +19,13 @@
     align-items: flex-start;
 
     @include tablets {
-        position: absolute;
-        top: 0;
-        left: rem(26px);
+        margin-bottom: rem(120px);
     }
+
+    @include tablets {
+        margin-bottom: rem(28px);
+    }
+
 }
 
 .header__nav {

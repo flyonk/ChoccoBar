@@ -1,7 +1,6 @@
 
 .upper-block {
-    background: url('../img/choccolates.png') left 94% center no-repeat,
-    url('../img/фон.png') center right no-repeat;
+    background: url('../img/фон.png') center right no-repeat;
     background-color: #61C4D9;
 
     @include tablets {
@@ -36,9 +35,11 @@
     justify-content: space-between;
     align-items: flex-start;
     height: 100%;
+    background: url('../img/choccolates.png') left 94% center no-repeat;
 
     @include tablets {
-        justify-content: center;
+        justify-content: flex-start;
+        background: none;
     }
 }
 
@@ -78,10 +79,11 @@
     display: flex;
     align-items: flex-start;
     height: 100%;
-    font-size: 48px;
+    font-size: rem(48px);
     
     @include tablets {
         margin-top: 10px;
+        font-size: rem(40px);
     }
 }
 
@@ -91,17 +93,22 @@
     height: 100%;
     padding-top: 5px;
 
+    p {
+        @include tablets {
+            text-align: center;
+        }
+
+    }
+
 
     @include tablets {
         padding: 0 25%;
         margin-top: 10px;
     }
 
-    @include tablets {
-        padding: 0 15%;
-        margin-top: 10px;
+    @include phones {
+        padding: 0 5%;
     }
-
 
 }
 

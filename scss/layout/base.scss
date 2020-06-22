@@ -85,11 +85,10 @@ li {
 
 .layout-container {
     display: flex;
-    max-width: rem(940px);
+    max-width: 940px;
     margin: 0 auto;
     padding: 0;
     position: relative;
-
-
+    width: 95%;
 }
 
