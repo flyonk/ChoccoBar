@@ -66,10 +66,10 @@
 
         &:before {
             content: "";
-            min-width: rem(350px);
-            min-height: rem(370px);
+            min-width: rem(400px);
+            min-height: rem(430px);
             background: url('../img/welcome_tablets_decor.png') center center / contain no-repeat;
-            margin-bottom: rem(16px);
+           
         }
     }
     
@@ -83,7 +83,7 @@
     
     @include tablets {
         margin-top: 10px;
-        font-size: rem(40px);
+
     }
 }
 

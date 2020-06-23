@@ -160,6 +160,10 @@ $phones: 480px;
         font-size: 16px;
         text-align: left;
     }
+
+    @include iphone5 {
+        font-size: 14px;
+    }
 }
 
 .reason-item__title {
@@ -173,6 +177,10 @@ $phones: 480px;
 
     @include phones {
         margin-top: 0;
+    }
+
+    @include iphone5 {
+        font-size: 21px;
     }
     
 }

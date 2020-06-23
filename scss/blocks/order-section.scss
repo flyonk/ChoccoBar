@@ -136,7 +136,11 @@
     }
 
 }
+    @include tablets {
+        height: 35px;
+    }
 }
+
 .form__controls {
     width: 100%;
     display: flex;

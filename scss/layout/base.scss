@@ -1,5 +1,6 @@
 $tablets: 768px;
 $phones: 480px;
+$iphone5: 400px;
 
 * {
     box-sizing: border-box;
@@ -24,7 +25,7 @@ html {
         font-size: $GlobalFontSize - 1px;
     }
 
-    @include tablets {
+    @include phones {
         font-size: $GlobalFontSize - 2px;
     }
 }
