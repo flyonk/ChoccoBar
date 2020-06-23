@@ -5,14 +5,16 @@
 
     &:nth-child(2) {
         margin-left: 25px;
+
+        @include tablets {
+            margin-left: rem(20px);
+        }
     }
 
     &:before {
         background: url('../img/checkmark.svg');
     }
 }
-
-
 
 
 
@@ -92,6 +94,10 @@
 
 .form__btns {
     margin-left: 20px;
+
+    @include phones {
+        margin-left: 90px;
+    }
 }
 
 .form__btns-submit {

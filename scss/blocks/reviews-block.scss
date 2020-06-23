@@ -8,14 +8,31 @@
         top: rem(33px);  
     }
 
+    @include phones {
+        display: none;
+    }
+
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+
+}
+
+.reviews_block-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .reviews__display {
-    background: #f2f5f4;
+    display: flex;
+    justify-content: center;
+    background: #F8FAF9;
     padding: rem(50px) rem(45px) rem(34px);
-    margin-top: rem(28px);
     overflow: hidden;
     position: relative;
+    max-width: rem(940px);
 
     &:before {
         content: "";
@@ -37,17 +54,50 @@
         z-index: 1;
         }
     
+        @include tablets {
+            padding: rem(60px) rem(20px) rem(34px);
+            margin-bottom: rem(70px);
+        }
+}
+
+.reviews__title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-family: "Alegreya Sans";
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+
 }
 
 .reviews__display-inner {
     display: flex;  
     position: relative;
 
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 .reviews__avatar {
     width: rem(254px);
     height: rem(260px);
+
+    @include tablets {
+        width: rem(138px);
+        height: rem(145px);
+    }
+}
+
+.reviews__text {
+        margin-bottom: rem(30px);
 }
 
 .reviews__textstyle {
@@ -55,9 +105,12 @@
     font-family: "Alegreya Sans";
     color: rgb(102, 102, 102);
     line-height: 1.2;
-    margin-bottom: rem(30px);
     position: relative;
     z-index: 2;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .reviews__author {
@@ -66,6 +119,7 @@
     line-height: 1.2;
     font-weight: bold;
     position: relative;
+
 
 }
 
@@ -86,6 +140,11 @@
     flex: 1;
     margin-left: rem(20px);
     padding-top: 15px;
+
+    @include tablets {
+        width: 95%;
+        margin-left: 0;
+    }
 }
 
 .interactive-avatar {
@@ -96,9 +155,15 @@
     overflow: hidden;
     position: relative;
 
+    @include tablets {
+        width: rem(100px);
+        height: rem(100px);
+    }
+
     &:active {
         border-color: #365a49;
     }
+
 }
 
 .interactive-avatar__link {
@@ -133,21 +198,13 @@
         position: absolute;
         top: 10%;
         right: 10%;
+
+        @include phones {
+            display: none;
+        }
     }
 }
 
-.reviews__title {
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    font-family: "Alegreya Sans";
-    color: $black;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin-top: rem(55px);
-
-}
 
 .reviews__content-title {
     font-size: 30px;

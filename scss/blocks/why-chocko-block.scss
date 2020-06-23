@@ -1,3 +1,6 @@
+$phones: 480px;
+
+
 .whychocco {
 
 
@@ -6,6 +9,15 @@
         content: url('../img/halfleaf.png');
         left: 0;
         bottom: rem(140px);
+
+        @include tablets {
+        bottom: rem(440px);
+
+        @include phones {
+            display: none;
+        }
+
+        }
     }
     
     &:after {
@@ -13,19 +25,33 @@
         content: url('../img/малина.png');
         left: 0;
         bottom: rem(-110px);
+
+        @include phones {
+        display: none;
+
+        }
     }
+}
+
+.whychocco__container {
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 .whychocco__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-family: "Alegreya Sans";
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
+
+    @include phones {
+        font-size: rem(40px);
+    }
 
 
 }
@@ -36,8 +62,18 @@
     color: rgb(102, 102, 102);
     line-height: 1.2;
     text-align: center;
-    text-align: center;
+    max-width: rem(400px);
+    margin: 0 auto;
     margin-bottom: rem(50px);
+
+    @include tablets {
+        max-width: unset;
+        padding: 0 20%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
 
 }
 
@@ -46,6 +82,10 @@
 .whychocco__reason {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .whychocco__reason-item {
@@ -54,16 +94,36 @@
     align-items: center;
     position: relative;
 
+    @include phones {
+        flex-direction: row;
+        margin-bottom: rem(19px);
+    }
+
     &:before {
         position: absolute;
         content: url('../img/bubbles.png');
-        top: 30%;
+        top: 17%;
         right: -27%;
+
+            @include tablets {
+                display: none;
+            }
         }
 
     &:nth-child(2) {
-        margin-left: rem(65px);
-        margin-right: rem(65px);
+        margin-left: rem(60px);
+        margin-right: rem(60px);
+
+        @include tablets {
+        margin-left: 6%;
+        margin-right: 6%;
+        }
+
+
+        @include phones {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     &:last-child {
@@ -80,6 +140,12 @@
     height: rem(66px);
 }
 
+.reason-item__text-container {
+    @include phones {
+        margin-left: rem(20px);
+    }
+}
+
 .reason-item__text {
     font-size: 18px;
     font-family: "Alegreya Sans Light";
@@ -87,6 +153,17 @@
     line-height: 1.2;
     text-align: center;
     margin-top: rem(20px);
+
+    @include phones {
+        padding: 0;
+        margin-top: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    @include iphone5 {
+        font-size: 14px;
+    }
 }
 
 .reason-item__title {
@@ -97,6 +174,14 @@
     line-height: 1.2;
     text-align: center;
     margin-top: rem(40px);
+
+    @include phones {
+        margin-top: 0;
+    }
+
+    @include iphone5 {
+        font-size: 21px;
+    }
     
 }
 
@@ -108,6 +193,7 @@
     justify-content: center;
     border-radius: 50%;
     background-color: #f2f5f4;
+    flex-shrink: 0;
 
 
 }
