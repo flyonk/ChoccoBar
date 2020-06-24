@@ -162,12 +162,12 @@ $phones: 480px;
     }
 
     @include iphone5 {
-        font-size: 14px;
+        font-size: rem(14px);
     }
 }
 
 .reason-item__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-family: "Alegreya Sans";
     color: black;
     font-weight: bold;
@@ -177,10 +177,12 @@ $phones: 480px;
 
     @include phones {
         margin-top: 0;
+        text-align: left;
+        margin-bottom: 15px;
     }
 
     @include iphone5 {
-        font-size: 21px;
+        font-size: rem(21px);
     }
     
 }
