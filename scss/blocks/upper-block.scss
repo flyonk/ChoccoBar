@@ -69,6 +69,11 @@
             min-width: rem(400px);
             min-height: rem(430px);
             background: url('../img/welcome_tablets_decor.png') center center / contain no-repeat;
+
+            @include phones {
+                min-width: rem(315px);
+                min-height: rem(320px);
+            }
            
         }
     }
@@ -83,7 +88,11 @@
     
     @include tablets {
         margin-top: 10px;
+        
+    }
 
+    @include phones {
+        font-size: rem(39px);
     }
 }
 
@@ -96,6 +105,10 @@
     p {
         @include tablets {
             text-align: center;
+        }
+
+        @include phones {
+            font-size: rem(17px);
         }
 
     }
