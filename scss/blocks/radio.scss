@@ -9,6 +9,10 @@
         @include tablets {
             margin-left: rem(20px);
         }
+
+        @include phones {
+            margin-left: 0;
+        }
     }
 
     &:before {

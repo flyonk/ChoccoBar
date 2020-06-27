@@ -25,6 +25,7 @@ $phones: 480px;
         content: url('../img/малина.png');
         left: 0;
         bottom: rem(-110px);
+        z-index: 2;
 
         @include phones {
         display: none;
