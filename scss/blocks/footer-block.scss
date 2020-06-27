@@ -112,11 +112,22 @@
 
 .footer-block__medias-icon {
     width: 23px;
-    height: 13px;
+    height: 23px;
     fill: gray;
+    margin-right: rem(10px);
+
+
+    @include phones {
+        width: 20px;
+        height: 20px;
+    }
 
     &:active {
         fill: black;
     }
 }
 
+#fb {
+    width: 30px;;
+    height: 17px;;
+}

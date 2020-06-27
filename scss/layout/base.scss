@@ -18,6 +18,16 @@ $iphone5: 400px;
     }
 }
 
+@mixin iphone5 {
+    @media screen and (max-width: $iphone5) {
+        @content;
+    }
+}
+
+
+
+
+
 html {
     font-size: $GlobalFontSize;
 
@@ -27,6 +37,10 @@ html {
 
     @include phones {
         font-size: $GlobalFontSize - 2px;
+    }
+
+    @include iphone5 {
+        font-size: $GlobalFontSize - 3px;
     }
 }
 
