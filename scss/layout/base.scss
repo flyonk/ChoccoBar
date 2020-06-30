@@ -30,6 +30,7 @@ $iphone5: 400px;
 
 html {
     font-size: $GlobalFontSize;
+    font-family: "Alegreya Sans";
 
     @include tablets {
         font-size: $GlobalFontSize - 1px;
