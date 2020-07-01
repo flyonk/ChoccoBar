@@ -39,6 +39,11 @@
     line-height: 2;
     padding-top: rem(120px);
 
+    @include phones {
+        justify-content: center;
+        padding-top: 0;
+    }
+
 
 }
 

@@ -71,8 +71,8 @@
             background: url('../img/welcome_tablets_decor.png') center center / contain no-repeat;
 
             @include phones {
-                min-width: rem(315px);
-                min-height: rem(320px);
+                min-width: rem(280px);
+                min-height: rem(280px);
             }
            
         }
