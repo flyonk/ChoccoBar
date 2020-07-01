@@ -14,41 +14,42 @@
 }
 
 
-.slider-block__left {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    max-width: 15px;
-    display: flex;
-    align-items: center;
-    transform:rotate(180deg);
-
-    @include tablets {
-        left: 0;
-        max-height: rem(40px);
-        margin-top: rem(150px);
-    }
-
-
-}
-
-.slider-block__right {
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    max-width: 15px;
-    display: flex;
-    align-items: center;
-
-    @include tablets {
-        max-height: rem(40px);
-        margin-top: rem(150px);
-        right: 0;
-    }
-
-}
-
 .slider-block__arrow {
+    position: absolute;
+    top: 50%;
+    max-width: 15px;
+    display: flex;
+    align-items: center;
+
+    &--left {
+        left: -5%;
+    transform:rotate(180deg);
+        @include tablets {
+            left: 15%;
+            top: 28%;
+    }
+        @include phones {
+            top: 30vmin;
+            left: 2%;
+        }
+    }
+
+    &--right {
+        right: -5%;
+        @include tablets {
+            right: 15%;
+            top: 28%;
+    }
+        @include phones {
+            top: 30vmin;
+            right: 2%;
+    }
+
+    }
+}
+
+
+.slider-block__arrow-svg {
     height: 30px;
 
     @include phones {
@@ -82,18 +83,12 @@
         }
 
         @include phones {
+            width: 60%;
         }
 }
 
-.slider-block__pictures-img {
-
-    @include tablets {
-
-    }
-
-    @include phones {
-  
-    }
+.slider-block__img {
+    max-width: 100%;
 }
 
 .slider-block__info {
@@ -159,7 +154,7 @@
 
     @include tablets {
         font-size: rem(30px);
-        white-space: nowrap;
+        text-align: center;
     }
 
     @include phones {
@@ -175,7 +170,7 @@
     margin-bottom: rem(20px);
 
     @include tablets {
-        width: 90%;
+        width: 70%;
         text-align: center;
     }
 
@@ -204,7 +199,7 @@
 
 
         @include tablets {
-            margin-left: rem(110px);
+
         }
 
         @include phones {
@@ -230,25 +225,14 @@
 
 }
 
-.info__offer-inner {
-    &:first-child {
-        width: 35%;
-        font-size: 60px;
-        text-transform: uppercase;
-        line-height: 1;
+.info__offer-price {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-right: rem(31px);
 
-        @include tablets {
-            margin-left: rem(25px);
-            width: 30%;
-        }
-
-
-    }
-    
-    &:last-child {
-        width: 25%;
-    }
 }
+
 
 .info__offer-button {
         @include button666;

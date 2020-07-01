@@ -28,10 +28,7 @@
 
 }
 
-.team-block__photo {
 
-
-}
 
 .team-block__name {
    font-size: 21px;
@@ -51,7 +48,7 @@
 
 }
 
-.team-block__description.description-opened {
+.team-block__name.description-opened + .team-block__description {
     display: block;
 }
 

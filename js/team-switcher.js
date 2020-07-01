@@ -1,20 +1,20 @@
 
 
-var team = document.querySelector('.team-block__name');
-var description = document.querySelector('.team-block__description');
+var team = document.querySelector('.team-block__content');
+// var description = document.querySelector('.team-block__description');
 team.addEventListener('click', function (e) {
-    var openedName = document('.description-opened');
+    var openedName = document.querySelector('.description-opened');
         if (e.target.classList.contains('team-block__name')) {
-            if (description.classList.contains('description-opened')) {
-                description.classList.remove('description-opened');
+            if (e.target.classList.contains('description-opened')) {
+                e.target.classList.remove('description-opened');
             } else {
                 if (openedName) {
-                    openedName.classList.remove('opened');
+                    openedName.classList.remove('description-opened');
                 }
-                description.classList.add('description-opened');
+                e.target.classList.add('description-opened');
             }
         }
-        console.log(e.target);
+
 });
 
 
