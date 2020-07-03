@@ -3,7 +3,17 @@
     z-index: 1;
 }
 
-.slider-block__main-container {
+.slider-block__container {
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+}
+
+.slider-block__slide {
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -104,13 +114,10 @@
         padding: 0;
     }
 
-        @include phones {
-
-        }
 }
 
-.info__logo {
-
+.info-block__logo-wrap {
+    position: relative;
 }
 
 .info__logo {
@@ -123,6 +130,10 @@
     background-color: #86c3d7;
     border-radius: 10px;
     margin-bottom: rem(20px);
+
+    &:hover {
+        background-color: #60aacc;
+    }
 
     @include tablets {
         display: none;
@@ -145,6 +156,51 @@
     margin-top: rem(10px);
 
 }
+
+.info-block__float-menu {
+    background-color: white;
+    position: absolute;
+    left: -9999px;
+    opacity: 0; 
+    min-height: rem(328px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.float-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: rem(220px);
+}
+
+.info-block__logo-wrap:hover .info-block__float-menu {
+    left: 22%;
+    top: 0%;
+    opacity: 0.9;
+    padding: 24px 20px 23px 31px;
+}
+
+.float-menu__svg-container {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.float-menu__svg {
+    width: 35px;
+    height: 35px;
+}
+
+.float-menu__name .float-menu__weight {
+    font-size: 16px;
+    font-family: "Alegreya Sans Medium";
+    color: rgb(54, 54, 54);
+    line-height: 1.5;
+}
+
+
 
 .info__title {
     font-size: rem(36px);
