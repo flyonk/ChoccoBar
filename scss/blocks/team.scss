@@ -1,3 +1,13 @@
+.team-block {
+    &:before {
+        content: url('../../img/chernika.png');
+        position: absolute;
+        top: rem(-35px);
+        right: 0;
+        z-index: 10000;
+    }
+}
+
 .team-block__container {
     flex-direction: column;
     align-items: center;
@@ -8,6 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .team-block__member {
@@ -28,7 +42,11 @@
 
 }
 
-
+.team-block__photo {
+    @include tablets {
+        display: none;
+    }
+}
 
 .team-block__name {
    font-size: 21px;
@@ -50,6 +68,14 @@
 
 .team-block__name.description-opened + .team-block__description {
     display: block;
+
+    @include tablets {
+        &:before {
+            content: url('../../img/boris.png');
+            margin-left: rem(100px);
+
+        }
+    }
 }
 
 .team-block__description-job {
@@ -57,15 +83,22 @@
     margin-bottom: 6px;
     font-size: rem(18px);
     line-height: 1.2;
+    font-weight: bold;
+
 }
 
 
 
-.team-block__description-about {
+.team-block__description__about {
     text-align: center;
     font-size: rem(18px);
     font-family: "Alegreya Sans Light";
     color: rgb(102, 102, 102);
     line-height: 1.2;
+
+    @include tablets {
+        padding: 0 10%;
+    }
+
 }
 

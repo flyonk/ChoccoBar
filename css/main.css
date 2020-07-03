@@ -893,11 +893,6 @@ li {
   right: 15px;
   top: 1.8333333333rem;
 }
-@media screen and (max-width: 480px) {
-  .reviews_block {
-    display: none;
-  }
-}
 
 .reviews {
   display: flex;
@@ -955,21 +950,43 @@ li {
   margin-bottom: 20px;
 }
 
-.reviews__display-inner {
-  display: flex;
+.reviews__list {
   position: relative;
+  min-height: 19.1666666667rem;
+}
+
+.reviews__item {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 5%;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__item {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 }
 
+.reviews__item-active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+  display: flex;
+  justify-content: center;
+}
+
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
+  z-index: 100500;
 }
 @media screen and (max-width: 768px) {
   .reviews__avatar {
@@ -993,6 +1010,7 @@ li {
 @media screen and (max-width: 768px) {
   .reviews__textstyle {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -1043,6 +1061,11 @@ li {
   }
 }
 .interactive-avatar:active {
+  border-color: #365a49;
+}
+
+.interactive-avatar.active {
+  border: 6px solid transparent;
   border-color: #365a49;
 }
 
@@ -1400,6 +1423,14 @@ li {
   text-decoration: none;
 }
 
+.team-block:before {
+  content: url("../../img/chernika.png");
+  position: absolute;
+  top: -1.9444444444rem;
+  right: 0;
+  z-index: 10000;
+}
+
 .team-block__container {
   flex-direction: column;
   align-items: center;
@@ -1409,6 +1440,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .team-block__content {
+    flex-direction: column;
+  }
 }
 
 .team-block__member {
@@ -1425,6 +1461,12 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .team-block__photo {
+    display: none;
+  }
 }
 
 .team-block__name {
@@ -1446,20 +1488,32 @@ li {
 .team-block__name.description-opened + .team-block__description {
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .team-block__name.description-opened + .team-block__description:before {
+    content: url("../../img/boris.png");
+    margin-left: 5.5555555556rem;
+  }
+}
 
 .team-block__description-job {
   text-align: center;
   margin-bottom: 6px;
   font-size: 1rem;
   line-height: 1.2;
+  font-weight: bold;
 }
 
-.team-block__description-about {
+.team-block__description__about {
   text-align: center;
   font-size: 1rem;
   font-family: "Alegreya Sans Light";
   color: #666666;
   line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .team-block__description__about {
+    padding: 0 10%;
+  }
 }
 
 .burger {
@@ -1527,13 +1581,19 @@ li {
   z-index: 1;
 }
 
-.slider-block__main-container {
+.slider-block__container .bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.slider-block__slide {
   display: flex;
   margin: 0 auto;
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .slider-block__main-container {
+  .slider-block__slide {
     flex-direction: column;
   }
 }
@@ -1632,6 +1692,11 @@ li {
     padding: 0;
   }
 }
+
+.info-block__logo-wrap {
+  position: relative;
+}
+
 .info__logo {
   display: flex;
   flex-direction: column;
@@ -1642,6 +1707,9 @@ li {
   background-color: #86c3d7;
   border-radius: 10px;
   margin-bottom: 1.1111111111rem;
+}
+.info__logo:hover {
+  background-color: #60aacc;
 }
 @media screen and (max-width: 768px) {
   .info__logo {
@@ -1662,6 +1730,49 @@ li {
   font-family: "Alegreya Sans";
   color: white;
   margin-top: 0.5555555556rem;
+}
+
+.info-block__float-menu {
+  background-color: white;
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  min-height: 18.2222222222rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.float-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 12.2222222222rem;
+}
+
+.info-block__logo-wrap:hover .info-block__float-menu {
+  left: 22%;
+  top: 0%;
+  opacity: 0.9;
+  padding: 24px 20px 23px 31px;
+}
+
+.float-menu__svg-container {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.float-menu__svg {
+  width: 35px;
+  height: 35px;
+}
+
+.float-menu__name .float-menu__weight {
+  font-size: 16px;
+  font-family: "Alegreya Sans Medium";
+  color: #363636;
+  line-height: 1.5;
 }
 
 .info__title {
