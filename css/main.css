@@ -1657,7 +1657,7 @@ li {
   position: absolute;
   content: url("../../img/slider-leafs.png");
   bottom: 0;
-  left: -5%;
+  left: 0%;
 }
 @media screen and (max-width: 768px) {
   .slider-block__pictures:before {
@@ -1994,5 +1994,34 @@ li {
 #fb {
   width: 30px;
   height: 17px;
+}
+
+.modal {
+  position: absolute;
+  right: 40%;
+  z-index: 1005001;
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */

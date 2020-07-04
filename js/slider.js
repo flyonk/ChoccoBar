@@ -1,15 +1,15 @@
 const slider = $('.slider-block__main-container').bxSlider({
-    pager: true,
-    controls: true
+    pager: false,
+    controls: false
 });
 
-$('slider-block__arrow--left').click(e => {
+$('.slider-block__arrow--left').click(e => {
     e.preventDefault;
 
     slider.goToPrevSlide();
 });
 
-$('slider-block__arrow--right').click(e => {
+$('.slider-block__arrow--right').click(e => {
     e.preventDefault;
 
     slider.goToNextSlide();
