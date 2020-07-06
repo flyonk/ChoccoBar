@@ -3,6 +3,7 @@
    right: 40%;
    z-index: 1005001;
    display: none;
+   top: 40%;
 
     &.error-modal {
         .modal__content {
@@ -33,5 +34,8 @@
 }
 
 
-
+.error-modal {
+    color: red;
+    font-weight: bold;
+}
 

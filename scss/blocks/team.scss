@@ -16,8 +16,9 @@
 
 .team-block__content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
 
     @include tablets {
         flex-direction: column;
@@ -25,9 +26,9 @@
 }
 
 .team-block__member {
-    display: flex;
-    flex-direction: column;
-    margin-right: rem(15px);
+    width: 24%;
+    position: relative;
+    text-align: center;
 
     &:last-child {
         margin-right: 0;
@@ -39,6 +40,7 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
+    margin-bottom: rem(58px);
 
 }
 
@@ -72,7 +74,7 @@
     @include tablets {
         &:before {
             content: url('../../img/boris.png');
-            margin-left: rem(100px);
+            text-align: center;
 
         }
     }

@@ -52,20 +52,20 @@
     
         @include tablets {
             padding: rem(60px) rem(20px) rem(34px);
-            margin-bottom: rem(70px);
+            
         }
 }
 
 .reviews__title {
     display: flex;
     justify-content: center;
-    font-size: 48px;
+    font-size: rem(48px);
     font-family: "Alegreya Sans";
     color: $black;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 
 
 }
@@ -119,7 +119,7 @@
 }
 
 .reviews__textstyle {
-    font-size: 18px;
+    font-size: rem(18px);
     font-family: "Alegreya Sans";
     color: rgb(102, 102, 102);
     line-height: 1.2;
@@ -134,7 +134,7 @@
 }
 
 .reviews__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-family: "Alegreya Sans Medium";
     line-height: 1.2;
     font-weight: bold;
@@ -159,7 +159,7 @@
 .reviews__content {
     flex: 1;
     margin-left: rem(20px);
-    padding-top: 15px;
+    padding-top: rem(15px);
 
     @include tablets {
         width: 95%;
@@ -210,9 +210,7 @@
 .reviews__switcher {
     display: flex;
     justify-content: center;
-    padding-left: 15px;
     margin: 0;
-    margin-top: 15px;
 }
 
 .reviews__switcher-item {
@@ -232,7 +230,7 @@
 
 
 .reviews__content-title {
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
     font-family: "Alegreya Sans";
     line-height: 1.2;

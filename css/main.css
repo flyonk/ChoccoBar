@@ -934,20 +934,19 @@ li {
 @media screen and (max-width: 768px) {
   .reviews__display {
     padding: 3.3333333333rem 1.1111111111rem 1.8888888889rem;
-    margin-bottom: 3.8888888889rem;
   }
 }
 
 .reviews__title {
   display: flex;
   justify-content: center;
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-family: "Alegreya Sans";
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
 }
 
 .reviews__list {
@@ -1000,7 +999,7 @@ li {
 }
 
 .reviews__textstyle {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Alegreya Sans";
   color: #666666;
   line-height: 1.2;
@@ -1015,7 +1014,7 @@ li {
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Alegreya Sans Medium";
   line-height: 1.2;
   font-weight: bold;
@@ -1037,7 +1036,7 @@ li {
 .reviews__content {
   flex: 1;
   margin-left: 1.1111111111rem;
-  padding-top: 15px;
+  padding-top: 0.8333333333rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__content {
@@ -1088,9 +1087,7 @@ li {
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  padding-left: 15px;
   margin: 0;
-  margin-top: 15px;
 }
 
 .reviews__switcher-item {
@@ -1109,7 +1106,7 @@ li {
 }
 
 .reviews__content-title {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   font-weight: bold;
   font-family: "Alegreya Sans";
   line-height: 1.2;
@@ -1285,6 +1282,14 @@ li {
   }
 }
 
+.form-input.input-error {
+  border-color: hotpink;
+}
+
+.input-error {
+  border-color: hotpink;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1438,8 +1443,9 @@ li {
 
 .team-block__content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .team-block__content {
@@ -1448,9 +1454,9 @@ li {
 }
 
 .team-block__member {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0.8333333333rem;
+  width: 24%;
+  position: relative;
+  text-align: center;
 }
 .team-block__member:last-child {
   margin-right: 0;
@@ -1461,6 +1467,7 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  margin-bottom: 3.2222222222rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1491,7 +1498,7 @@ li {
 @media screen and (max-width: 768px) {
   .team-block__name.description-opened + .team-block__description:before {
     content: url("../../img/boris.png");
-    margin-left: 5.5555555556rem;
+    text-align: center;
   }
 }
 
@@ -2001,6 +2008,7 @@ li {
   right: 40%;
   z-index: 1005001;
   display: none;
+  top: 40%;
 }
 .modal.error-modal .modal__content {
   color: red;
@@ -2023,5 +2031,10 @@ li {
 .modal__content {
   margin-bottom: 15px;
   color: #000;
+}
+
+.error-modal {
+  color: red;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

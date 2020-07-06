@@ -377,7 +377,7 @@
                         <div class="team-block__title">Команда</div>
                             <ul class="team-block__content">
                                 <li class="team-block__member">
-                                    <div class="team-block__photo"><img src="img/boris.png" alt=""></div>
+                                    <div class="team-block__photo"><img src="img/boris.png" alt="" class="team-block__img"></div>
                                     <div class="team-block__name">Борис Федорович<img src="img/team-button.png" alt="" class="team-block__name-button"></div>
                                     <div class="team-block__description">
                                         <div class="team-block__description-job">Оператор</div>
@@ -385,7 +385,7 @@
                                     </div>
                                 </li>
                                 <li class="team-block__member">
-                                    <div class="team-block__photo"><img src="img/alla.png" alt=""></div>
+                                    <div class="team-block__photo"><img src="img/alla.png" alt="" class="team-block__img"></div>
                                     <div class="team-block__name">Алла Иванова<img src="img/team-button.png" alt="" class="team-block__name-button"></div>
                                     <div class="team-block__description">
                                         <div class="team-block__description-job">Оператор</div>
@@ -393,7 +393,7 @@
                                     </div>
                                 </li>
                                 <li class="team-block__member">
-                                    <div class="team-block__photo"><img src="img/kirill.png" alt=""></div>
+                                    <div class="team-block__photo"><img src="img/kirill.png" alt="" class="team-block__img"></div>
                                     <div class="team-block__name">Кирилл Матросов<img src="img/team-button.png" alt="" class="team-block__name-button"></div>
                                     <div class="team-block__description">
                                         <div class="team-block__description-job">Оператор</div>
@@ -401,7 +401,7 @@
                                     </div>
                                 </li>
                                 <li class="team-block__member">
-                                    <div class="team-block__photo"><img src="img/mila.png" alt=""></div>
+                                    <div class="team-block__photo"><img src="img/mila.png" alt="" class="team-block__img"></div>
                                     <div class="team-block__name">Мила Рыжкова<img src="img/team-button.png" alt="" class="team-block__name-button"></div>
                                     <div class="team-block__description">
                                        <div class="team-block__description-job">Оператор</div>
@@ -498,21 +498,22 @@
                         <div class="layout-container order-section-container">
                                <h1 class="order-section__title">Закажите доставку</h1>
                                 <form action="" class="order-section__orderform">
+                                    <input type="hidden" name="to" value="somemail@gmail.com">
                                     <div class="form__col">
                                         <div class="form__row">
                                             <label class="form__block">
                                                 <div class="form__title">Имя</div>
-                                                <input type="text" class="form__input">
+                                                <input type="text" class="form__input" required>
                                             </label>
                                             <label class="form__block">
                                                 <div class="form__title">Телефон</div>
-                                                <input type="text" class="form__input">
+                                                <input type="text" class="form__input" required>
                                             </label>
                                         </div>
                                         <div class="form__row">
                                             <label class="form__block">
                                                 <div class="form__title">Улица</div>
-                                                <input type="text" class="form__input">
+                                                <input type="text" class="form__input" required>
                                             </label>  
                                         </div>
                                         <div class="form__row">
@@ -526,7 +527,7 @@
                                             </label>
                                             <label class="form__block">
                                                 <div class="form__title">Квартира</div>
-                                                <input type="text" class="form__input">
+                                                <input type="text" class="form__input" required>
                                             </label>
                                             <label class="form__block">
                                                 <div class="form__title">Этаж</div>
@@ -571,7 +572,7 @@
                         <div class="modal" id="modal">
                             <div class="modal__container">
                                 <div class="modal__content">Сообщение отправлено</div>
-                                <div class="modal__button-container"><a href="#" class="form__btns-submit app-close-modal">Закрыть</a></div>
+                                <div class="modal__button-container"><a href="#" class="form__btns-submit app-submit-btn app-close-modal">Закрыть</a></div>
                             </div>
                         </div>
                 </section>
@@ -618,9 +619,7 @@
 
             </div>
         <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="js/fancymodal.js"></script>
         <script src="js/slider.js"></script>
