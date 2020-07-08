@@ -41,7 +41,7 @@ html {
     }
 
     @include iphone5 {
-        font-size: $GlobalFontSize - 3px;
+        font-size: $GlobalFontSize - 4px;
     }
 }
 

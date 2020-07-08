@@ -22,6 +22,8 @@
 
     @include tablets {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -104,3 +106,6 @@
 
 }
 
+.arrow-active {
+    transform: rotate(180deg);
+}

@@ -1,9 +1,11 @@
 .modal {
    position: absolute;
-   right: 40%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50% -50%);
    z-index: 1005001;
    display: none;
-   top: 40%;
+   
 
     &.error-modal {
         .modal__content {
