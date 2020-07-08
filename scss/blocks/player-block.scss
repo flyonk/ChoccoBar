@@ -1,0 +1,80 @@
+.player-block {
+    background: #F8FAF9;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-block__title {
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: rem(50px);
+}
+
+.player-block__player {
+    margin: 0 auto;
+    width: rem(660px);
+    height: rem(405px);
+    
+}
+
+.player-wrapper {
+    height: 90%;
+    
+    
+}
+
+.player__elem {
+    width: 100%;
+    height: 100%;
+}
+
+.player-controls {
+    display: flex;
+    background-color: #404040;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    width: rem(660px);
+    height: rem(34px);
+}
+
+.player-start {
+    border: none;
+    outline: 0;
+    width: 17px;
+    height: 23px;
+    background-color: #404040;
+}
+
+.player-playback {
+    width: rem(440px);
+    height: 5px;
+    border-radius: 1px;
+    background-color: #626262;
+    position: relative;
+}
+
+.player-playback__button {
+    position: absolute;
+    border-radius: 50% 50% 50%;
+    width: 6px;
+    height: 12px;
+    outline: 0;
+    bottom: -4px;
+    border: none;
+}
+
+.player-duration {
+    display: flex;
+}
+
+.player-estimate {
+    margin-left: rem(10px);
+}

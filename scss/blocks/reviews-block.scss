@@ -93,6 +93,10 @@
         align-items: center;
         text-align: center;
     }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .reviews__item-active {

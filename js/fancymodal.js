@@ -17,7 +17,7 @@ $('.order-section__orderform').submit((e) => {
     e.preventDefault();
 
     const form = $(e.currentTarget);
-    const name = form.find("[name='name']");
+    const name = form.find("[name='name']");    ///обращаемся к атрибуту name в input
     const phone = form.find("[name='phone']");
     const comment = form.find("[name='comment']");
     const to = form.find("[name='to']");
@@ -25,7 +25,7 @@ $('.order-section__orderform').submit((e) => {
     const modal = $('#modal');
     const content = modal.find(".modal__content");
 
-    modal.removeCLass('error-modal');
+    modal.removeClass('error-modal');
 
     const isValid = validateFields(form, [name, phone, comment, to]);
 
@@ -48,7 +48,7 @@ $('.order-section__orderform').submit((e) => {
         request.fail(data => {
             const message = data.responseJSON.message;
             content.text(message);
-            modal.addCLass('error-modal');
+            modal.addClass('error-modal');
         });
 
         request.always(() => {
@@ -61,7 +61,7 @@ $('.order-section__orderform').submit((e) => {
 
 });
 
-$('app-submit-btn').click(e => {
+$('.app-submit-btn').click(e => {
     e.preventDefault();
 
     $.fancybox.close();

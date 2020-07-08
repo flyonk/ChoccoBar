@@ -385,7 +385,7 @@ html {
 }
 @media screen and (max-width: 400px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -973,6 +973,11 @@ li {
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__item {
+    padding: 0;
+  }
+}
 
 .reviews__item-active {
   position: static;
@@ -1450,6 +1455,8 @@ li {
 @media screen and (max-width: 768px) {
   .team-block__content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1521,6 +1528,117 @@ li {
   .team-block__description__about {
     padding: 0 10%;
   }
+}
+
+.arrow-active {
+  transform: rotate(180deg);
+}
+
+.accordeon-block {
+  background: url(../../img/accordeon-background.png) center center/cover no-repeat;
+}
+
+.accordeon-block__menu {
+  display: flex;
+}
+
+.accordeon-block__title {
+  font-family: AlegreyaSans;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5.5rem;
+  margin-right: 2.8333333333rem;
+}
+
+.accordeon-container {
+  height: 100%;
+  justify-content: space-between;
+  max-width: unset;
+  width: 100%;
+}
+
+.accordeon-list__item {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  align-items: flex-end;
+}
+
+.accordeon-item__trigger {
+  width: 5.5555555556rem;
+  display: flex;
+  background-position: left bottom;
+  background-size: cover;
+  padding-bottom: 30%;
+  height: 100%;
+  align-items: flex-end;
+  background: center center/cover no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+.accordeon-item__trigger-absolute {
+  width: 5.5555555556rem;
+  display: flex;
+  background-position: left bottom;
+  background-size: cover;
+  padding-bottom: 30%;
+  height: 100%;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: center center/cover no-repeat;
+}
+
+.accordeon-item__title {
+  font-size: 2.6666666667rem;
+  text-decoration: none;
+  font-family: AlegreyaSans;
+  color: #fff;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+  height: 5.5555555556rem;
+  position: absolute;
+  bottom: 20px;
+}
+
+.accordeon-item__content-wrap {
+  max-width: 0;
+  width: 530px;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.accordeon-list__item-active .accordeon-item__content-wrap {
+  max-width: 35rem;
+}
+
+.accordeon-item__content {
+  height: 100%;
+  background-color: rgba(51, 53, 55, 0.93);
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+  z-index: 1;
+}
+
+.accordeon-item__close {
+  position: absolute;
+  right: 1.7777777778rem;
+  top: 1.4444444444rem;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+
+.accordeon-item__content-text {
+  overflow: hidden;
+  padding: 2.7777777778rem 7.0555555556rem 2.7777777778rem 1.5rem;
 }
 
 .burger {
@@ -2005,10 +2123,11 @@ li {
 
 .modal {
   position: absolute;
-  right: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
   z-index: 1005001;
   display: none;
-  top: 40%;
 }
 .modal.error-modal .modal__content {
   color: red;
@@ -2036,5 +2155,83 @@ li {
 .error-modal {
   color: red;
   font-weight: bold;
+}
+
+.player-block {
+  background: #F8FAF9;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-block__title {
+  text-align: center;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2.7777777778rem;
+}
+
+.player-block__player {
+  margin: 0 auto;
+  width: 36.6666666667rem;
+  height: 22.5rem;
+}
+
+.player-wrapper {
+  height: 90%;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player-controls {
+  display: flex;
+  background-color: #404040;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  width: 36.6666666667rem;
+  height: 1.8888888889rem;
+}
+
+.player-start {
+  border: none;
+  outline: 0;
+  width: 17px;
+  height: 23px;
+  background-color: #404040;
+}
+
+.player-playback {
+  width: 24.4444444444rem;
+  height: 5px;
+  border-radius: 1px;
+  background-color: #626262;
+  position: relative;
+}
+
+.player-playback__button {
+  position: absolute;
+  border-radius: 50% 50% 50%;
+  width: 6px;
+  height: 12px;
+  outline: 0;
+  bottom: -4px;
+  border: none;
+}
+
+.player-duration {
+  display: flex;
+}
+
+.player-estimate {
+  margin-left: 0.5555555556rem;
 }
 /*# sourceMappingURL=main.css.map */
