@@ -1,0 +1,206 @@
+$phones: 480px;
+
+
+.whychocco {
+
+
+    &:before {
+        position: absolute;
+        content: url('../../img/halfleaf.png');
+        left: 0;
+        bottom: rem(140px);
+
+        @include tablets {
+        bottom: rem(440px);
+
+        @include phones {
+            display: none;
+        }
+
+        }
+    }
+    
+    &:after {
+        position: absolute;
+        content: url('../../img/малина.png');
+        left: 0;
+        bottom: rem(-110px);
+        z-index: 2;
+
+        @include phones {
+        display: none;
+
+        }
+    }
+}
+
+.whychocco__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.whychocco__title {
+    font-size: rem(48px);
+    font-family: "Alegreya Sans";
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+    @include phones {
+        font-size: rem(40px);
+    }
+
+
+}
+
+.whychocco__description {
+    font-size: 18px;
+    font-family: "Alegreya Sans";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    max-width: rem(400px);
+    margin: 0 auto;
+    margin-bottom: rem(50px);
+
+    @include tablets {
+        max-width: unset;
+        padding: 0 20%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+
+}
+
+
+
+.whychocco__reason {
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.whychocco__reason-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include phones {
+        flex-direction: row;
+        margin-bottom: rem(19px);
+    }
+
+    &:before {
+        position: absolute;
+        content: url('../../img/bubbles.png');
+        top: 17%;
+        right: -27%;
+
+            @include tablets {
+                display: none;
+            }
+        }
+
+    &:nth-child(2) {
+        margin-left: rem(60px);
+        margin-right: rem(60px);
+
+        @include tablets {
+        margin-left: 6%;
+        margin-right: 6%;
+        }
+
+
+        @include phones {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &:last-child {
+        &:before {
+            display: none;
+        }
+    }
+
+
+}
+
+.reason-item__img {
+    width: rem(66px);
+    height: rem(66px);
+}
+
+.reason-item__text-container {
+    @include phones {
+        margin-left: rem(20px);
+    }
+}
+
+.reason-item__text {
+    font-size: 18px;
+    font-family: "Alegreya Sans Light";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: rem(20px);
+
+    @include phones {
+        padding: 0;
+        margin-top: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    @include iphone5 {
+        font-size: rem(14px);
+    }
+}
+
+.reason-item__title {
+    font-size: rem(27px);
+    font-family: "Alegreya Sans";
+    color: black;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: rem(40px);
+
+    @include phones {
+        margin-top: 0;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    @include iphone5 {
+        font-size: rem(21px);
+    }
+    
+}
+
+.reason-item__img-cover {
+    display: flex;
+    height: rem(120px);
+    width: rem(120px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    flex-shrink: 0;
+
+
+}
+
+
+
+

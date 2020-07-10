@@ -1,0 +1,112 @@
+.accordeon-block {
+    background: url(../img/accordeon-background.png) center center/ cover no-repeat;
+}
+
+
+.accordeon-block__menu {
+    display: flex;
+}
+
+.accordeon-block__title {
+    font-family: AlegreyaSans;
+    font-size: rem(48px);
+    font-weight: bold;
+    color: #fff;
+    margin-top: rem(99px);
+    margin-right: rem(51px);
+}
+
+.accordeon-container {
+    height: 100%;
+    justify-content: space-between;
+    max-width: unset;
+    width: 100%;
+}
+
+.accordeon-list__item {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    align-items: flex-end;
+    
+    
+}
+
+.accordeon-item__trigger {
+    width: rem(100px);
+    display: flex;
+    background-position: left bottom;
+    background-size: cover;
+    padding-bottom: 30%;
+    height: 100%;
+    align-items: flex-end;
+    background: center center / cover no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.accordeon-item__trigger-absolute {
+    width: rem(100px);
+    display: flex;
+    background-position: left bottom;
+    background-size: cover;
+    padding-bottom: 30%;
+    height: 100%;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: center center / cover no-repeat;
+
+}
+
+.accordeon-item__title {
+      font-size: rem(48px);
+      text-decoration: none;
+      font-family: AlegreyaSans;
+      color: #fff;
+      transform: rotate(-90deg);
+      white-space: nowrap;
+      width: 100%;
+      height: rem(100px);
+      position: absolute;
+      bottom: 20px;
+
+}
+
+.accordeon-item__content-wrap {
+    max-width: 0;
+    width: 530px;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.accordeon-list__item-active .accordeon-item__content-wrap {
+    max-width: rem(630px);
+}
+
+.accordeon-item__content {
+    height: 100%;
+    background-color: rgba(51, 53, 55, .93);
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    z-index: 1;
+
+}
+
+.accordeon-item__close {
+    position: absolute;
+    right: rem(32px);
+    top: rem(26px);
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+.accordeon-item__content-text {
+   overflow: hidden;
+   padding: rem(50px) rem(127px) rem(50px) rem(27px);
+}
