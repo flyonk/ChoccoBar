@@ -177,3 +177,19 @@
 .welcome__button-container {
     margin-top: rem(30px);
 }
+
+.scroller {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+
+}
+
+.scroller__svg {
+    width: 20px;
+    height: 20px;
+}
