@@ -5,6 +5,11 @@
 
 .accordeon-block__menu {
     display: flex;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 
 .accordeon-block__title {
@@ -12,13 +17,18 @@
     font-size: rem(48px);
     font-weight: bold;
     color: #fff;
-    margin-top: rem(99px);
-    margin-right: rem(51px);
+    position: absolute;
+    left: rem(79px);
+    top: rem(99px);
+
+    @include tablets {
+        left: rem(40px);
+    }
 }
 
 .accordeon-container {
     height: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: unset;
     width: 100%;
 }
@@ -29,6 +39,14 @@
     position: relative;
     align-items: flex-end;
     
+    @include phones {
+
+        &.accordeon-list__item-active {
+            width: 100%;
+            position: absolute;
+            z-index: 162;
+        }
+    }
     
 }
 
@@ -43,6 +61,10 @@
     background: center center / cover no-repeat;
     position: relative;
     z-index: 2;
+
+     @include tablets {
+         width: rem(80px);
+     }
 }
 
 .accordeon-item__trigger-absolute {
@@ -59,6 +81,10 @@
     z-index: 1;
     background: center center / cover no-repeat;
 
+    @include tablets {
+        width: rem(80px);
+    }
+
 }
 
 .accordeon-item__title {
@@ -69,22 +95,30 @@
       transform: rotate(-90deg);
       white-space: nowrap;
       width: 100%;
-      height: rem(100px);
+      height: rem(60px);
       position: absolute;
       bottom: 20px;
 
 }
 
 .accordeon-item__content-wrap {
-    max-width: 0;
-    width: 530px;
+    width: 0;
     height: 100%;
     overflow: hidden;
     transition: 1s;
+
 }
 
 .accordeon-list__item-active .accordeon-item__content-wrap {
-    max-width: rem(630px);
+    width: rem(630px);
+
+    @include tablets {
+        width: calc(100vw - 5.5555555556rem * 3);
+    }
+
+     @include phones {
+         width: calc(100vw - 4.4444444444rem * 3);
+     }
 }
 
 .accordeon-item__content {
@@ -94,6 +128,15 @@
     overflow: hidden;
     transition: 1s;
     z-index: 1;
+    min-width: rem(630px);
+
+    @include tablets {
+        width: calc(100vw - 5.5555555556rem * 3);
+    }
+
+    @include phones {
+        width: calc(100vw - 4.4444444444rem * 3);
+    }
 
 }
 
@@ -109,4 +152,8 @@
 .accordeon-item__content-text {
    overflow: hidden;
    padding: rem(50px) rem(127px) rem(50px) rem(27px);
+
+   @include tablets {
+       padding: rem(50px);
+   }
 }

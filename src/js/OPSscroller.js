@@ -24,14 +24,16 @@ const performTransition = sectionEq => {
 };
 
 const scrollViewport = direction => {
+    const activeSection = sections.filter(".active");
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
     if (direction == "next" && nextSection.length) {
-        const activeSection = section.filter(".active");
-        const nextSection = activeSection.next();
-        const prevSection = activeSection.prev();
+        performTransition(nextSection.index());
 
     }
 
     if (direction == "prev" && prevSection.length) {
+        performTransition(prevSection.index());
 
     }
 }
@@ -40,12 +42,10 @@ $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
 
     if (deltaY > 0) {
-        performTransition(nextSection.index());
         scrollViewport("next");
     }
 
     if (deltaY < 0) {
-        performTransition(prevSection.index());
         scrollViewport("prev");
     }
 });
