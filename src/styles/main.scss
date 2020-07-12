@@ -1,0 +1,32 @@
+$GlobalFontSize: 18px;
+$ContainerWidth: 940px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet');
+@import "layout/normalize.scss";
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+@import "layout/media.scss";
+@import "blocks/header.scss";
+@import "blocks/upper-block.scss";
+@import "blocks/logo.scss";
+@import "blocks/maincontent.scss";
+@import "blocks/why-chocko-block.scss";
+@import "blocks/reviews-block.scss";
+@import "blocks/order-section.scss";
+@import "blocks/radio.scss";
+@import "blocks/team.scss";
+@import "blocks/accordeon-block.scss";
+@import "blocks/hamburger.scss";
+@import "blocks/slider-block.scss";
+@import "blocks/footer-block.scss";
+@import "blocks/modal-order.scss";
+@import "blocks/player-block.scss";
+
+

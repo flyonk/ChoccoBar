@@ -1,0 +1,303 @@
+.slider-block {
+    background-color: #f8faf9;
+    z-index: 1;
+}
+
+.slider-block__container {
+
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+}
+
+.slider-block__slide {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+
+.slider-block__arrow {
+    position: absolute;
+    top: 50%;
+    max-width: 15px;
+    display: flex;
+    align-items: center;
+
+    &--left {
+        left: -5%;
+    transform:rotate(180deg);
+        @include tablets {
+            left: 15%;
+            top: 28%;
+    }
+        @include phones {
+            top: 30vmin;
+            left: 2%;
+        }
+    }
+
+    &--right {
+        right: -5%;
+        @include tablets {
+            right: 15%;
+            top: 28%;
+    }
+        @include phones {
+            top: 30vmin;
+            right: 2%;
+    }
+
+    }
+}
+
+
+.slider-block__arrow-svg {
+    height: 30px;
+
+    @include phones {
+        height: 15px;
+    }
+}
+
+.slider-block__pictures {
+        width: 44%;
+        margin-right: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &:before {
+            position: absolute;
+            content: url('../../img/slider-leafs.png');
+            bottom: 0;
+            left: 0%;
+
+            @include tablets {
+            display: none;
+                
+            }
+        }
+
+        @include tablets {
+         margin-right: 0;
+
+        }
+
+        @include phones {
+            width: 60%;
+        }
+}
+
+.slider-block__img {
+    max-width: 100%;
+}
+
+.slider-block__info {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+ 
+
+    @include tablets {
+        align-items: center;
+        width: 98%;
+        margin-top: rem(45px);
+        padding: 0;
+    }
+
+}
+
+.info-block__logo-wrap {
+    position: relative;
+}
+
+.info__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: rem(90px);
+    max-width: rem(90px);
+    background-color: #86c3d7;
+    border-radius: 10px;
+    margin-bottom: rem(20px);
+
+    &:hover {
+        background-color: #60aacc;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+
+.info__logo-icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.info__logo-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: "Alegreya Sans";
+    color: white;
+    margin-top: rem(10px);
+
+}
+
+.info-block__float-menu {
+    background-color: white;
+    position: absolute;
+    left: -9999px;
+    opacity: 0; 
+    min-height: rem(328px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.float-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: rem(220px);
+}
+
+.info-block__logo-wrap:hover .info-block__float-menu {
+    left: 22%;
+    top: 0%;
+    opacity: 0.9;
+    padding: 24px 20px 23px 31px;
+}
+
+.float-menu__svg-container {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.float-menu__svg {
+    width: 35px;
+    height: 35px;
+}
+
+.float-menu__name .float-menu__weight {
+    font-size: 16px;
+    font-family: "Alegreya Sans Medium";
+    color: rgb(54, 54, 54);
+    line-height: 1.5;
+}
+
+
+
+.info__title {
+    font-size: rem(36px);
+    color: black;
+    margin-bottom: rem(20px);
+    
+
+    @include tablets {
+        font-size: rem(30px);
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: rem(26px);
+    }
+}
+
+.info__description {
+    font-size: rem(18px);
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    width: 72%;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        width: 70%;
+        text-align: center;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+
+}
+
+.info__parametrs {
+    display: flex;
+    color: rgb(102, 102, 102);
+    margin-bottom: rem(25px);
+    width: 100%;
+    justify-content: flex-start;
+
+    @include tablets {
+        justify-content: center;
+    }
+    
+}
+
+.info__parametrs-inner {
+    text-align: left;
+    &:first-child {
+
+
+        @include tablets {
+
+        }
+
+        @include phones {
+            margin-right: rem(40px);
+        }
+       
+        
+    }
+    &:last-child {
+        margin-left: rem(55px);
+       
+    }
+}
+
+.info__offer {
+    display: flex;
+    width: 100%;
+
+    @include tablets {
+        justify-content: center;
+        margin-top: rem(15px);
+    }
+
+}
+
+.info__offer-price {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-right: rem(31px);
+
+}
+
+
+.info__offer-button {
+        @include button666;
+        background-color: $green;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $green;
+        }
+    
+}
