@@ -438,6 +438,31 @@ li {
   width: 95%;
 }
 
+.scroller {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  z-index: 999999;
+  fill: white;
+}
+@media screen and (max-width: 480px) {
+  .scroller {
+    display: none;
+  }
+}
+.scroller--shadowed {
+  fill: black;
+}
+
+.scroller__item {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -698,21 +723,6 @@ li {
 
 .welcome__button-container {
   margin-top: 1.6666666667rem;
-}
-
-.scroller {
-  display: flex;
-  flex-direction: column;
-  width: 30px;
-  height: 200px;
-  position: absolute;
-  top: 40%;
-  right: 5%;
-}
-
-.scroller__svg {
-  width: 20px;
-  height: 20px;
 }
 
 .logo {

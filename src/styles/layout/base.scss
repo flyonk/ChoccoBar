@@ -119,3 +119,30 @@ li {
     width: 95%;
 }
 
+.scroller {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    z-index: 999999;
+    fill: white;
+
+        @include phones {
+            display: none;
+        }
+
+    &--shadowed {
+        fill: black;
+    }
+
+}
+
+.scroller__item {
+    width: 20px;
+    height: 20px;
+}
+
+
