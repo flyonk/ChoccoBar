@@ -8,7 +8,7 @@
 
     @include phones {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: flex-end;
     }
 }
 
@@ -113,11 +113,11 @@
     width: rem(630px);
 
     @include tablets {
-        width: calc(100vw - 5.5555555556rem * 3);
+        width: calc(100vw - 5.5555555556);
     }
 
      @include phones {
-         width: calc(100vw - 4.4444444444rem * 3);
+         width: calc(100vw - 4.4444444444);
      }
 }
 
@@ -129,13 +129,14 @@
     transition: 1s;
     z-index: 1;
     min-width: rem(630px);
+    width: rem(630px);
 
     @include tablets {
-        width: calc(100vw - 5.5555555556rem * 3);
+        width: calc(100vw - 5.5555555556);
     }
 
     @include phones {
-        width: calc(100vw - 4.4444444444rem * 3);
+        width: calc(100vw - 4.4444444444);
     }
 
 }
@@ -155,5 +156,9 @@
 
    @include tablets {
        padding: rem(50px);
+   }
+
+   @include phones {
+       width: calc(100vw - 4.4444444444rem);
    }
 }

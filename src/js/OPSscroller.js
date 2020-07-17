@@ -1,10 +1,10 @@
 const sections = $(".section");
 const display = $(".maincontent");
 const sideMenu = $('.scroller');
-const menuItems = sideMenu.find(".scroller-item");
+const menuItems = sideMenu.find(".scroller__item");
 
-// const mobileDetect = new MobileDetect(window.navigator.userAgent);
-// const isMobile = mobileDetect.mobile();
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -25,7 +25,7 @@ const ChangeMenuThemeForSection = (sectionEq) => {
     const currentSection = sections.eq(sectionEq);
     const menuTheme = currentSection.attr('data-sidemenu-theme');
     const activeClass = "scroller--shadowed";
-
+    
     if (menuTheme == "black") {
         sideMenu.addClass(activeClass);
     } else {
@@ -131,17 +131,17 @@ $("[data-scroll-to]").click(e => {
     performTransition(reqSection.index());
 });
 
-// if (isMobile) {
-//     //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-//     $("body").swipe({
-//         swipe: function (event, direction) {
-//             const scrollerphone = viewportScroller();
-//             let scrollDirection = "";
+if (isMobile) {
+    //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+    $("body").swipe({
+        swipe: function (event, direction) {
+            const scrollerphone = viewportScroller();
+            let scrollDirection = "";
 
-//             if (direction == "up") scrollDirection = "next";
-//             if (direction == "down") scrollDirection = "prev";
+            if (direction == "up") scrollDirection = "next";
+            if (direction == "down") scrollDirection = "prev";
 
-//             scrollerphone[scrollDirection]();
-//         }
-//     });
-// }
+            scrollerphone[scrollDirection]();
+        }
+    });
+}
