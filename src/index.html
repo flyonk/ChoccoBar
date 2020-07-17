@@ -3,32 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" href="styles/main.css">
     <title>batoncheg.ru</title>
 </head>
 <body>
     <div class="wrapper">
         <ul class="upper-block__scroller scroller">
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
-            <li class="scroller__item"><svg class="scroller__svg">
-                    <circle r="3" cx="15" cy="10" /></svg></li>
+            <li class="scroller__item scroller-item--active" >
+                <a href="#" class="scroller__link" data-scroll-to="hero">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="whychocco">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="slider">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="hero">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="team">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="accordeon">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="reviews">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="player">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
+            <li class="scroller__item" >
+                <a href="#" class="scroller__link" data-scroll-to="orderform">
+                <svg viewbox="0 0 20 20" class="scroller__svg">
+                    <circle r="3" cx="15" cy="10" /></svg>
+                </a>
+            </li>
         </ul>
         <div class="maincontent">
                 <section class="section upper-block" data-section-id="hero" data-sidemenu-theme="white">
@@ -131,16 +167,16 @@
                 </section>
                 <section class="section slider-block" data-section-id="slider" data-sidemenu-theme="black">
                     <div class="layout-container slider-block__container">
-                        <div class="slider-block__arrow slider-block__arrow--left">
+                        <a class="slider-block__arrow slider-block__arrow--left" href="#">
                             <svg class="slider-block__arrow-svg">
                             <a href=""><use xlink:href="svg/sprite.svg#arrow"></use></a>
                             </svg>
-                        </div>
-                        <div class="slider-block__arrow slider-block__arrow--right">
+                        </a>
+                        <a class="slider-block__arrow slider-block__arrow--right" href="#">
                             <svg class="slider-block__arrow-svg">
                             <a href=""><use xlink:href="svg/sprite.svg#arrow"></use></a>
                             </svg>
-                        </div>
+                        </a>
                     <div class="slider-block__main-container">
                     <div class="slider-block__slide">
                         <div class="slider-block__pictures">
@@ -604,7 +640,7 @@
                 <section class="section player-block" data-section-id="player" data-sidemenu-theme="black">
                     <div class="layout-container player-container">
                         <div class="player-block__title">Как мы работаем</div>
-                        <div class="player-block__player player">
+                        <!-- <div class="player-block__player player">
                             <div class="player-wrapper">
                                 <div class="player__elem" id="yt-player"></div>
                                 <div class="player-splash"></div>                              
@@ -619,7 +655,27 @@
                                     <span class="player-estimate">0:00</span>
                                 </div>
                             </div>
+                        </div> -->
+                        <div class="video__player">
+                            <video id="player" poster="img/chopitup.png">
+                                <source src="video/video666.mp4" type="video/mp4">
+                            </video>
+                            <img src="img/playwhite.png" alt="" class="play video__player-img" height="40" width="40">
                         </div>
+                            
+                        <div class="video__toolbar">
+                                <div class="duration">
+                                    <button class="play duration__img"></button>
+                                    <input type="range" class="duration__length" id="durationLevel">
+                                </div>
+                                <div class="sound">
+                                    <img src="img/volume.png" alt="" id="volume" class="sound__mic" height="15px" width="17px">
+                                    <div class="sound__volume">
+                                        <input type="range" class="duration__length duration__length--other" id="micLevel">
+                                    </div>
+                                </div>
+                        </div>     
+                        
                     </div>
                 </section>
                 <section class="section order-section" data-section-id="orderform" data-sidemenu-theme="black">
@@ -747,12 +803,13 @@
             </div>
 
             </div>
-        <script src="js/jquery-3.5.1.min.js"></script>
+        <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
         <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
         <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
         <script src="js/map.js"></script>
         <script src="js/OPSscroller.js"></script>
         <script src="js/fancymodal.js"></script>
@@ -760,6 +817,7 @@
         <script src="js/tab-switcher.js"></script>
         <script src="js/team-switcher.js"></script>     
         <script src="js/burger.js"></script>
-        <script src="js/player.js"></script>
+        <script src="js/player.js"></script> -->
+        <script src="main.min.js"></script>
 </body>
 </html>

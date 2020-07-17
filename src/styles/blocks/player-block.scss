@@ -78,3 +78,84 @@
 .player-estimate {
     margin-left: rem(10px);
 }
+////////////////////ВЫШЕ ЮТУБ////////////////////
+
+.video__player {
+    margin: 0 auto;
+    width: rem(660px);
+    height: rem(405px);
+}
+
+.video__toolbar {
+    display: flex;
+    align-items: center;
+    width: rem(660px);
+    height: 35px;
+    margin-top: -9px;
+    background-color: #404040;
+    margin: 0 auto;
+}
+
+.duration__length {
+    width: 94%;
+    height: 7px;
+    border-radius: 1px;
+    background-color: #626262;
+    outline: none;
+}
+
+.duration__length::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+}
+
+.duration {
+    display: flex;
+    width: 86%;
+    align-items: center;
+}
+
+.play {
+    width: 16px;
+    height: 22px;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.video__player-img {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+
+    &--active {
+        display: none;
+    }
+}
+
+.duration__img {
+    background: url('../img/playgray.png') center center;
+    cursor: pointer;
+    
+}
+
+.duration__img.active {
+    padding: 1px;
+}
+
+.sound {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sound__mic {
+    margin-right: 15px;
+}

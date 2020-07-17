@@ -128,14 +128,19 @@ li {
     top: 40%;
     right: 5%;
     z-index: 999999;
-    fill: white;
+
+    .scroller__svg {
+        fill: white;
+    }
 
         @include phones {
             display: none;
         }
 
     &--shadowed {
-        fill: black;
+        .scroller__svg {
+            fill: black;
+        }
     }
 
 }
@@ -146,3 +151,15 @@ li {
 }
 
 
+.scroller-item--active {
+    .scroller__svg {
+        fill: red;
+    }
+}
+
+.duration__length::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ width: 20px;
+ height: 20px;
+ background: red;
+}
