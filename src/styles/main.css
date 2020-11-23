@@ -616,6 +616,24 @@ li {
 .welcome__button-container {
   margin-top: 1.66667rem; }
 
+.popup {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  height: 100px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid black;
+  display: none; }
+
+.HAHAH {
+  color: #990052 !important;
+  background-color: #365a49;
+  border: 1px solid black; }
+
 .logo {
   width: 53px;
   height: 38px; }
