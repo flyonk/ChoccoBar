@@ -150,16 +150,20 @@ task('server', () => {
     });
 });
 
-watch('src/styles/**/*.scss', series('sass','styles'));
-watch('src/*.html', series('copy:html'));
-watch('src/js/*.js', series('scripts'));
-watch('src/video/*.mp4', series('copy:video'));
-watch('src/svg/*.svg', series('icons'));
+task('watch', () => {
+    watch('src/styles/**/*.scss', series('sass', 'styles'));
+    watch('src/*.html', series('copy:html'));
+    watch('src/js/*.js', series('scripts'));
+    watch('src/video/*.mp4', series('copy:video'));
+    watch('src/svg/*.svg', series('icons'));
+});
+
 
 task("default", series(
     "clean", "sass", "styles",
     parallel("copy:html", "copy:images","copy:svg","scripts","icons","copy:video"),
-    "server"));
+    parallel("watch", "server")
+ ));
 
-    task("build", series("clean", parallel("copy:html", "copy:images", "copy:svg", "sass",
-        "styles", "scripts", "icons", "copy:video")));
+task("build", series("clean", parallel("copy:html", "copy:images", "copy:svg", "sass",
+"styles", "scripts", "icons", "copy:video")));
